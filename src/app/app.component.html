@@ -2,4 +2,6 @@
   <button (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
   <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
 </div>
-<div></div>
+<div>
+  <app-weapon [data]="weapon"></app-weapon>
+</div>

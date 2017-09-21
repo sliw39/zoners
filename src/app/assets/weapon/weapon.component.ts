@@ -16,4 +16,8 @@ export class WeaponComponent implements OnInit {
   ngOnInit() {
   }
 
+  getImageUrl() {
+    return `assets/images/weapons/${this.data.name}.png`;
+  }
+
 }

@@ -7,8 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class DotlineComponent implements OnInit {
 
-  @Input() value: number;
-  @Output() valueChanged = new EventEmitter<number>();
+  @Input() data: number;
+  @Output() dataChanged = new EventEmitter<number>();
 
   @Input() master = true;
   @Input() max = 6;

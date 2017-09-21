@@ -1,0 +1,36 @@
+:host {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 52mm;
+    width: 52mm;
+    border: 1px solid black;
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.label {
+    width: 40%;
+}
+
+.stats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.stat {
+    width: 12mm;
+    text-align: center;
+}
+.stat-head {
+    background-color: #e4c2c2;
+    border-top-left-radius: 5px;
+}
+.stat-body {
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ddd;
+}

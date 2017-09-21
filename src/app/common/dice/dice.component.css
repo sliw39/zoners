@@ -1,0 +1,9 @@
+:host {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+:host > app-dotline {
+    width: 20mm;
+}
