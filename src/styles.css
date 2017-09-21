@@ -1,9 +1,9 @@
 
 @font-face {
     font-family: "stalker1";
-    src: url("assets/fonts/stalker1.ttf") format("ttf")
+    src: url("/assets/fonts/stalker1.ttf") format("truetype");
 }
 @font-face {
     font-family: "stalker2";
-    src: url("assets/fonts/stalker2.ttf") format("ttf")
+    src: url("/assets/fonts/stalker2.ttf") format("truetype");
 }
