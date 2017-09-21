@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "stalker1";
+    src: url("assets/fonts/stalker1.ttf") format("ttf")
+}
+@font-face {
+    font-family: "stalker2";
+    src: url("assets/fonts/stalker2.ttf") format("ttf")
+}
