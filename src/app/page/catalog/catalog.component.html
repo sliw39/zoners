@@ -1,0 +1,7 @@
+<div class="filter">
+  <input type="text" [(value)]="filters.name" (valueChange)="applyFilters()">
+</div>
+<div class="weapons">
+  <app-weapon [data]="wpn" *ngFor="let wpn of weapons"></app-weapon>
+</div>
+<div class="equipment"></div>

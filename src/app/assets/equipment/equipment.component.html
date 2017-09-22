@@ -1,0 +1,16 @@
+<div class="title">{{data.name}}</div>
+<div class="durability">{{data.durability}}</div>
+<div class="stats">
+  <div class="stat">
+    <div class="stat-head"><i class="fa fa-shield"></i></div>
+    <div class="stat-body"><app-dotline [data]="data.resistance"></app-dotline></div>
+  </div>
+  <div class="stat">
+    <div class="stat-head">☢</div>
+    <div class="stat-body">{{data.isolation.dice}}D&nbsp;+{{data.isolation.bonus}}</div>
+  </div>
+  <div class="stat">
+    <div class="stat-head"><i class="fa fa-balance-scale"></i></div>
+    <div class="stat-body">{{data.weight}}</div>
+  </div>
+</div>

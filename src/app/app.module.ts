@@ -13,6 +13,10 @@ import { WeaponComponent } from './assets/weapon/weapon.component';
 import { DiceComponent } from './common/dice/dice.component';
 import { RangePipe } from './common/range.pipe';
 import { DotlineComponent } from './common/dotline/dotline.component';
+import { EquipmentComponent } from './assets/equipment/equipment.component';
+import { PrintablePageComponent } from './display/printable-page/printable-page.component';
+import { CartComponent } from './display/cart/cart.component';
+import { CatalogComponent } from './page/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { DotlineComponent } from './common/dotline/dotline.component';
     WeaponComponent,
     DiceComponent,
     RangePipe,
-    DotlineComponent
+    DotlineComponent,
+    EquipmentComponent,
+    PrintablePageComponent,
+    CartComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,

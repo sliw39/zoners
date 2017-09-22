@@ -10,7 +10,7 @@ export class DotlineComponent implements OnInit {
   @Input() data: number;
   @Output() dataChanged = new EventEmitter<number>();
 
-  @Input() master = true;
+  @Input() master = false;
   @Input() max = 6;
   @Input() edit = false;
 

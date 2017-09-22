@@ -1,19 +1,13 @@
 import { RollValue } from "../../common/dice/dice.model";
+import { Item } from "../item.model";
 
-export interface Weapon {
-    id: number;
-    name: string;
-    detail: string;
-
-    weight: number;
+export interface Weapon extends Item {
     ammo: number;
     ammotype: string;
     power: RollValue;
     handling: number;
 
     accuracy: Accuracy;
-
-    price: number;
 }
 
 export interface Accuracy {
