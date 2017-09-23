@@ -10,10 +10,6 @@ import { CatalogService } from './catalog.service';
 })
 export class CatalogComponent implements OnInit {
 
-  filters = {
-    name: ""
-  }
-
   weapons: Item[] = [];
   equipments: Item[] = [];
 
@@ -23,10 +19,6 @@ export class CatalogComponent implements OnInit {
 
   ngOnInit() {
     this.catalogService.getWeapons().then(lst => this.weapons = lst);
-  }
-
-  applyFilters() {
-    this.catalogService.getWeapons(this.filters.name).then(lst => this.weapons = lst);
   }
 
 }

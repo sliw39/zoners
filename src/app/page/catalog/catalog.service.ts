@@ -105,16 +105,8 @@ export class CatalogService {
 
   constructor() { }
 
-  getWeapons(searchFilter?: string) {
-    return Promise.resolve(WEAPONS).then(wpnList => {
-      let lst: Weapon[] = [];
-      for(let wpn of wpnList) {
-        if(!searchFilter || wpn.name.toLowerCase().indexOf(searchFilter.toLowerCase()) !== -1) {
-          lst.push(wpn);
-        }
-      }
-      return lst;
-    });
+  getWeapons() {
+    return Promise.resolve(WEAPONS);
   }
 
 }

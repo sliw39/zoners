@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { EquipmentComponent } from './assets/equipment/equipment.component';
 import { PrintablePageComponent } from './display/printable-page/printable-page.component';
 import { CartComponent } from './display/cart/cart.component';
 import { CatalogComponent } from './page/catalog/catalog.component';
+import { ItemFilterPipe } from './common/item-filter.pipe';
+import { CartService } from './display/cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -28,15 +31,17 @@ import { CatalogComponent } from './page/catalog/catalog.component';
     EquipmentComponent,
     PrintablePageComponent,
     CartComponent,
-    CatalogComponent
+    CatalogComponent,
+    ItemFilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [ CartService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
