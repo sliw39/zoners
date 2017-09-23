@@ -1,0 +1,1076 @@
+{
+    "weapons": [
+        {
+            "id": 1,
+            "name": "Makarov",
+            "detail": "",
+            "weight": 1,
+            "ammo": 7,
+            "ammotype": "9mm",
+            "power": {
+                "dice": 1,
+                "bonus": 3
+            },
+            "handling": 8,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 3
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 1
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 400
+        },
+        {
+            "id": 2,
+            "name": "Fusil à canon scié",
+            "detail": "",
+            "weight": 2,
+            "ammo": 2,
+            "ammotype": ".12mm",
+            "power": {
+                "dice": 1,
+                "bonus": 4
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 6
+                },
+                "short": {
+                    "dice": 2
+                },
+                "medium": {
+                    "dice": 0
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 3000
+        },
+        {
+            "id": 3,
+            "name": "M1",
+            "detail": "",
+            "weight": 4,
+            "ammo": 8,
+            "ammotype": "7.62",
+            "power": {
+                "dice": 4,
+                "bonus": 2
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 1
+                },
+                "short": {
+                    "dice": 2
+                },
+                "medium": {
+                    "dice": 4
+                },
+                "long": {
+                    "dice": 3
+                },
+                "verylong": {
+                    "dice": 2
+                }
+            },
+            "price": 4500
+        },
+        {
+            "id": 4,
+            "name": "AK-74u",
+            "detail": "",
+            "weight": 3,
+            "ammo": 5,
+            "ammotype": "5.45",
+            "power": {
+                "dice": 2,
+                "bonus": 3
+            },
+            "handling": 15,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 3
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 1
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 3700
+        },
+        {
+            "id": 5,
+            "name": "Desert Eagle",
+            "detail": "",
+            "weight": 2,
+            "ammo": 7,
+            "ammotype": ".50mm",
+            "power": {
+                "dice": 4,
+                "bonus": 2
+            },
+            "handling": 13,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 4
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 1
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 7000
+        },
+        {
+            "id": 6,
+            "name": "SKS",
+            "detail": "",
+            "weight": 5,
+            "ammo": 8,
+            "ammotype": "7.62",
+            "power": {
+                "dice": 5,
+                "bonus": 3
+            },
+            "handling": 10,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 3
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 8000
+        },
+        {
+            "id": 7,
+            "name": "AK-47",
+            "detail": "",
+            "weight": 4,
+            "ammo": 10,
+            "ammotype": "5.45",
+            "power": {
+                "dice": 3,
+                "bonus": 3
+            },
+            "handling": 15,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 4
+                },
+                "short": {
+                    "dice": 4
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 2
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 7000
+        },
+        {
+            "id": 8,
+            "name": "Beneli-M4",
+            "detail": "",
+            "weight": 3,
+            "ammo": 6,
+            "ammotype": ".12mm",
+            "power": {
+                "dice": 3,
+                "bonus": 4
+            },
+            "handling": 16,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 5
+                },
+                "short": {
+                    "dice": 4
+                },
+                "medium": {
+                    "dice": 0
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 9500
+        },
+        {
+            "id": 9,
+            "name": "L85",
+            "detail": "",
+            "weight": 4,
+            "ammo": 10,
+            "ammotype": "5.56",
+            "power": {
+                "dice": 5,
+                "bonus": 3
+            },
+            "handling": 10,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 4
+                },
+                "long": {
+                    "dice": 3
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 13800
+        },
+        {
+            "id": 10,
+            "name": "VSS Vintorez",
+            "detail": "",
+            "weight": 4,
+            "ammo": 10,
+            "ammotype": "5.56",
+            "power": {
+                "dice": 5,
+                "bonus": 3
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 1
+                },
+                "short": {
+                    "dice": 2
+                },
+                "medium": {
+                    "dice": 4
+                },
+                "long": {
+                    "dice": 4
+                },
+                "verylong": {
+                    "dice": 3
+                }
+            },
+            "price": 23000
+        },
+        {
+            "id": 11,
+            "name": "SVD",
+            "detail": "",
+            "weight": 7,
+            "ammo": 8,
+            "ammotype": "12.7",
+            "power": {
+                "dice": 7,
+                "bonus": 2
+            },
+            "handling": 15,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 1
+                },
+                "short": {
+                    "dice": 1
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 4
+                },
+                "verylong": {
+                    "dice": 4
+                }
+            },
+            "price": 17000
+        },
+        {
+            "id": 12,
+            "name": "Zastava M07",
+            "detail": "verrou",
+            "weight": 7,
+            "ammo": 5,
+            "ammotype": "12.7",
+            "power": {
+                "dice": 8,
+                "bonus": 1
+            },
+            "handling": 20,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 0
+                },
+                "short": {
+                    "dice": 1
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 4
+                },
+                "verylong": {
+                    "dice": 5
+                }
+            },
+            "price": 21000
+        },
+        {
+            "id": 13,
+            "name": "SPAS 12",
+            "detail": "",
+            "weight": 6,
+            "ammo": 5,
+            "ammotype": ".12mm",
+            "power": {
+                "dice": 3,
+                "bonus": 4
+            },
+            "handling": 10,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 5
+                },
+                "short": {
+                    "dice": 4
+                },
+                "medium": {
+                    "dice": 2
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 15000
+        },
+        {
+            "id": 14,
+            "name": "RPG 7",
+            "detail": "",
+            "weight": 12,
+            "ammo": 1,
+            "ammotype": "spe.",
+            "power": {
+                "dice": 10,
+                "bonus": 5
+            },
+            "handling": 20,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 5
+                },
+                "medium": {
+                    "dice": 0
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 25000
+        },
+        {
+            "id": 14,
+            "name": "Galil AR",
+            "detail": "",
+            "weight": 5,
+            "ammo": 7,
+            "ammotype": "5.56",
+            "power": {
+                "dice": 4,
+                "bonus": 3
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 4
+                },
+                "medium": {
+                    "dice": 4
+                },
+                "long": {
+                    "dice": 2
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 18000
+        },
+        {
+            "id": 15,
+            "name": "TAR-21",
+            "detail": "",
+            "weight": 3,
+            "ammo": 10,
+            "ammotype": "5.56",
+            "power": {
+                "dice": 4,
+                "bonus": 3
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 3
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 3
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 12500
+        },
+        {
+            "id": 16,
+            "name": "RPK-74",
+            "detail": "rapide, lourde",
+            "weight": 8,
+            "ammo": 10,
+            "ammotype": "7.62",
+            "power": {
+                "dice": 5,
+                "bonus": 3
+            },
+            "handling": 16,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 2
+                },
+                "medium": {
+                    "dice": 2
+                },
+                "long": {
+                    "dice": 2
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 25000
+        },
+        {
+            "id": 17,
+            "name": "PKM",
+            "detail": "artillerie, lourde",
+            "weight": 10,
+            "ammo": 12,
+            "ammotype": "12.7",
+            "power": {
+                "dice": 8,
+                "bonus": 3
+            },
+            "handling": 16,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 2
+                },
+                "medium": {
+                    "dice": 2
+                },
+                "long": {
+                    "dice": 2
+                },
+                "verylong": {
+                    "dice": 2
+                }
+            },
+            "price": 35000
+        },
+        {
+            "id": 18,
+            "name": "AK-12",
+            "detail": "",
+            "weight": 4,
+            "ammo": 10,
+            "ammotype": "5.45",
+            "power": {
+                "dice": 5,
+                "bonus": 3
+            },
+            "handling": 12,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 2
+                },
+                "short": {
+                    "dice": 4
+                },
+                "medium": {
+                    "dice": 3
+                },
+                "long": {
+                    "dice": 3
+                },
+                "verylong": {
+                    "dice": 1
+                }
+            },
+            "price": 15000
+        },
+        {
+            "id": 19,
+            "name": "Zastava M57",
+            "detail": "",
+            "weight": 1,
+            "ammo": 6,
+            "ammotype": "9mm",
+            "power": {
+                "dice": 2,
+                "bonus": 4
+            },
+            "handling": 10,
+            "accuracy": {
+                "veryshort": {
+                    "dice": 3
+                },
+                "short": {
+                    "dice": 3
+                },
+                "medium": {
+                    "dice": 2
+                },
+                "long": {
+                    "dice": 0
+                },
+                "verylong": {
+                    "dice": 0
+                }
+            },
+            "price": 12000
+        }
+    ],
+    "equipments": [
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 1,
+            "price": 2500,
+            "name": "Veste en cuir",
+            "durability": 4,
+            "set": "cuir",
+            "weight": 1,
+            "resistance": 1
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 2,
+            "price": 500,
+            "name": "Capuche en cuir",
+            "durability": 4,
+            "set": "cuir",
+            "weight": 0,
+            "resistance": 1
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 3,
+            "price": 1000,
+            "name": "Pantalon de cuir",
+            "durability": 4,
+            "set": "cuir",
+            "weight": 1,
+            "resistance": 1
+        },
+        {
+            "type": "bras",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 4,
+            "price": 200,
+            "name": "Gants en cuir",
+            "durability": 4,
+            "set": "cuir",
+            "weight": 0,
+            "resistance": 1
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 5,
+            "price": 5400,
+            "name": "Veste en cuir renforcé",
+            "durability": 5,
+            "set": "cuir renforcé",
+            "weight": 3,
+            "resistance": 2
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "1",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 6,
+            "price": 1200,
+            "name": "Capuche en cuir renforcé",
+            "durability": 5,
+            "set": "cuir renforcé",
+            "weight": 1,
+            "resistance": 1
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 7,
+            "price": 3000,
+            "name": "Pantalon de cuir renforcé",
+            "durability": 5,
+            "set": "cuir renforcé",
+            "weight": 2,
+            "resistance": 2
+        },
+        {
+            "type": "bras",
+            "isolation": {
+                "bonus": "1",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 8,
+            "price": 2000,
+            "name": "Gants en cuir renforcé",
+            "durability": 5,
+            "set": "cuir renforcé",
+            "weight": 0,
+            "resistance": 1
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 9,
+            "price": 11500,
+            "name": "Masque à gaz",
+            "durability": 1,
+            "set": "cuir isolé",
+            "weight": 2,
+            "resistance": 1
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 10,
+            "price": 13000,
+            "name": "Veste en cuir amélioré",
+            "durability": 5,
+            "set": "cuir isolé",
+            "weight": 4,
+            "resistance": 2
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "1",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 11,
+            "price": 7000,
+            "name": "Pantalon en cuir amélioré",
+            "durability": 5,
+            "set": "cuir isolé",
+            "weight": 2,
+            "resistance": 2
+        },
+        {
+            "type": "bras",
+            "isolation": {
+                "bonus": "2",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 12,
+            "price": 2500,
+            "name": "Gants en cuir isolés",
+            "durability": 2,
+            "set": "cuir isolé",
+            "weight": 0,
+            "resistance": 1
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "2",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 13,
+            "price": 8000,
+            "name": "Casque militaire ancien",
+            "durability": 2,
+            "set": "ancienne guerre",
+            "weight": 1,
+            "resistance": 3
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "2",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 14,
+            "price": 13500,
+            "name": "Gilet SN-42",
+            "durability": 10,
+            "set": "ancienne guerre",
+            "weight": 10,
+            "resistance": 5
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 15,
+            "price": 5000,
+            "name": "Pantalon de treillis",
+            "durability": 6,
+            "set": "ancienne guerre",
+            "weight": 0,
+            "resistance": 1
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 16,
+            "price": 17000,
+            "name": "Casque militaire standard",
+            "durability": 2,
+            "set": "militaire",
+            "weight": 2,
+            "resistance": 4
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 17,
+            "price": 15000,
+            "name": "Gilet pare-balle léger",
+            "durability": 7,
+            "set": "militaire",
+            "weight": 4,
+            "resistance": 4
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "1",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 18,
+            "price": 8500,
+            "name": "Pantalon de treillis molletonné",
+            "durability": 8,
+            "set": "militaire",
+            "weight": 1,
+            "resistance": 1
+        },
+        {
+            "type": "bras",
+            "isolation": {
+                "bonus": "1",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 19,
+            "price": 9500,
+            "name": "Gants standards",
+            "durability": 5,
+            "set": "militaire",
+            "weight": 0,
+            "resistance": 2
+        },
+        {
+            "type": "intégral",
+            "isolation": {
+                "bonus": "0",
+                "dice": "4"
+            },
+            "detail": " ",
+            "id": 20,
+            "price": 70000,
+            "name": "Combinaison SSP-99",
+            "durability": 3,
+            "set": "environnement hostile",
+            "weight": 7,
+            "resistance": 1
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "4",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 21,
+            "price": 30000,
+            "name": "Réservoir d'oxygène",
+            "durability": 1,
+            "set": "environnement hostile",
+            "weight": 4,
+            "resistance": 10
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 22,
+            "price": 15000,
+            "name": "Circuit d'air PSZ",
+            "durability": 1,
+            "set": "PSZ",
+            "weight": 1,
+            "resistance": 0
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "2",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 23,
+            "price": 23000,
+            "name": "Casque militaire PSZ",
+            "durability": 3,
+            "set": "PSZ",
+            "weight": 2,
+            "resistance": 6
+        },
+        {
+            "type": "torse",
+            "isolation": {
+                "bonus": "0",
+                "dice": "1"
+            },
+            "detail": " ",
+            "id": 24,
+            "price": 30000,
+            "name": "Gilet pare-balle PSZ",
+            "durability": 8,
+            "set": "PSZ",
+            "weight": 5,
+            "resistance": 6
+        },
+        {
+            "type": "jambe",
+            "isolation": {
+                "bonus": "2",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 25,
+            "price": 16000,
+            "name": "Pantalon PSZ",
+            "durability": 4,
+            "set": "PSZ",
+            "weight": 2,
+            "resistance": 4
+        },
+        {
+            "type": "bras",
+            "isolation": {
+                "bonus": "0",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 26,
+            "price": 14000,
+            "name": "Gants PSZ",
+            "durability": 4,
+            "set": "PSZ",
+            "weight": 1,
+            "resistance": 4
+        },
+        {
+            "type": "intégral",
+            "isolation": {
+                "bonus": "0",
+                "dice": "3"
+            },
+            "detail": " ",
+            "id": 27,
+            "price": 85000,
+            "name": "Combinaison SEVA",
+            "durability": 5,
+            "set": "SEVA",
+            "weight": 6,
+            "resistance": 5
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "3",
+                "dice": "0"
+            },
+            "detail": " ",
+            "id": 28,
+            "price": 20000,
+            "name": "Casque SEVA",
+            "durability": 4,
+            "set": "SEVA",
+            "weight": 2,
+            "resistance": 5
+        },
+        {
+            "type": "intégral",
+            "isolation": {
+                "bonus": "0",
+                "dice": "3"
+            },
+            "detail": " ",
+            "id": 29,
+            "price": 150000,
+            "name": "Exosquelette",
+            "durability": 5,
+            "set": "Exosquelette",
+            "weight": 15,
+            "resistance": 5
+        },
+        {
+            "type": "tête",
+            "isolation": {
+                "bonus": "0",
+                "dice": "3"
+            },
+            "detail": " ",
+            "id": 30,
+            "price": 4000,
+            "name": "Casque en cuivre",
+            "durability": 1,
+            "set": null,
+            "weight": 1,
+            "resistance": 0
+        }
+    ]
+}

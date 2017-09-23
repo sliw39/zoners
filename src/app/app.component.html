@@ -3,5 +3,5 @@
   <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
 </div>
 <div>
-  <app-catalog></app-catalog>
+  <app-catalog *ngIf="(user | async)?.uid"></app-catalog>
 </div>

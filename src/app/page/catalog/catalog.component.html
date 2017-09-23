@@ -2,6 +2,8 @@
   <input type="text" [(ngModel)]="searchText">
 </div>
 <div class="weapons">
-  <app-weapon [data]="wpn" *ngFor="let wpn of weapons | itemFilter : searchText"></app-weapon>
+  <app-weapon [data]="wpn" *ngFor="let wpn of weapons | async | itemFilter : searchText"></app-weapon>
 </div>
-<div class="equipment"></div>
+<div class="equipments">
+  <app-equipment [data]="eqp" *ngFor="let eqp of equipments | async | itemFilter : searchText"></app-equipment>
+</div>

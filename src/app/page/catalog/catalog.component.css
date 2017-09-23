@@ -1,0 +1,4 @@
+.weapons, .equipments {
+    display: flex;
+    flex-flow: row wrap;
+}
