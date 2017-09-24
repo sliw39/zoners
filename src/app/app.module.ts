@@ -50,6 +50,9 @@ import { FullscreenService } from './common/fullscreen/fullscreen.service';
     AngularFireAuthModule
   ],
   providers: [ CartService, ToolsService, FullscreenService ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    EquipmentFormComponent
+  ]
 })
 export class AppModule { }

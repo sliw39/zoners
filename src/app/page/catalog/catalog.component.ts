@@ -5,6 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import { Equipment } from '../../assets/equipment/equipment.model';
 import { WeaponService } from '../../assets/weapon/weapon.service';
 import { EquipmentService } from '../../assets/equipment/equipment.service';
+import { FullscreenService } from '../../common/fullscreen/fullscreen.service';
+import { EquipmentFormComponent } from '../../assets/equipment/equipment-form.component';
 
 @Component({
   selector: 'app-catalog',
@@ -27,7 +29,8 @@ export class CatalogComponent implements OnInit {
 
   constructor(
     private equipmentService: EquipmentService,
-    private weaponService: WeaponService
+    private weaponService: WeaponService,
+    private fullscreenService: FullscreenService
   ) { }
 
   ngOnInit() {
@@ -81,6 +84,8 @@ export class CatalogComponent implements OnInit {
       item: this.currentItem,
       itemType: this.currentItemType
     });
+
+    this.openItem(this.currentItemType, this.currentItem);
   }
 
   selectItem(itemType: ItemType, item: Item) {
@@ -91,6 +96,14 @@ export class CatalogComponent implements OnInit {
       item: this.currentItem,
       itemType: this.currentItemType
     });
+  }
+
+  openItem(itemType: ItemType, item: Item) {
+    switch(itemType) {
+      case "EQUIPMENT":
+        this.fullscreenService.show(EquipmentFormComponent, item);
+        break;
+    }
   }
 
 }

@@ -20,6 +20,7 @@
 <div class="equipments">
   <app-equipment [data]="eqp"
                  (click)="selectItem('EQUIPMENT', eqp)"
+                 (dblclick)="openItem('EQUIPMENT', eqp)"
                  [ngClass]="{'selected': currentItem === eqp}"
                  *ngFor="let eqp of equipments | async | itemFilter : searchText">
   </app-equipment>

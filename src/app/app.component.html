@@ -8,9 +8,6 @@
 
 <div *ngIf="(user | async)?.uid" class="page-body">
   <app-catalog (selectedItemChange)="selectItem($event)"></app-catalog>
-  <app-equipment-form *ngIf="currentItemType === 'EQUIPMENT'"
-                      [data]="currentItem">
-  </app-equipment-form>
 </div>
 
 <app-fullscreen></app-fullscreen>
