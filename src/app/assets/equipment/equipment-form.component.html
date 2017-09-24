@@ -1,54 +1,57 @@
-<div class="form">
-  <div class="line">
-    <div class="label">Nom :</div>
-    <div class="value"><input type="text" [(ngModel)]="data.name"></div>
-  </div>
-  <div class="line">
-    <div class="label">Etat max :</div>
-    <div class="value"><input type="number" [(ngModel)]="data.durability"></div>
-  </div>
-  <div class="line">
-    <div class="label">Résistance :</div>
-    <div class="value"><input type="number" [(ngModel)]="data.resistance"></div>
-  </div>
-  <div class="line">
-    <div class="label">Isolation :</div>
-    <div class="value"><input type="number" [(ngModel)]="data.isolation.dice">D+<input type="number" [(ngModel)]="data.isolation.bonus"></div>
-  </div>
-  <div class="line">
-    <div class="label">Poids :</div>
-    <div class="value"><input type="number" [(ngModel)]="data.weight"></div>
-  </div>
-  <div class="line">
-    <div class="label">Price :</div>
-    <div class="value"><input type="number" [(ngModel)]="data.price"></div>
-  </div>
-  <div class="line">
-    <div class="label">Détail :</div>
-    <div class="value"><textarea [(ngModel)]="data.detail"></textarea></div>
-  </div>
-  <div class="line">
-    <div class="label">Set :</div>
-    <div class="value"><input type="text" [(ngModel)]="data.set"></div>
-  </div>
-  <div class="line">
-    <div class="label">Type :</div>
-    <div class="value">
-      <select [(ngModel)]="data.type">
+<div class="body">
+  <div class="form">
+    <div class="line">
+      <div class="label">Nom :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.name"></div>
+    </div>
+    <div class="line">
+      <div class="label">Etat max :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.durability"></div>
+    </div>
+    <div class="line">
+      <div class="label">Résistance :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.resistance"></div>
+    </div>
+    <div class="line">
+      <div class="label">Isolation :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.isolation.dice">D+<input type="number" [(ngModel)]="data.isolation.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">Poids :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.weight"></div>
+    </div>
+    <div class="line">
+      <div class="label">Price :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.price"></div>
+    </div>
+    <div class="line">
+      <div class="label">Détail :</div>
+      <div class="value"><textarea [(ngModel)]="data.detail"></textarea></div>
+    </div>
+    <div class="line">
+      <div class="label">Set :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.set"></div>
+    </div>
+    <div class="line">
+      <div class="label">Type :</div>
+      <div class="value">
+        <select [(ngModel)]="data.type">
         <option value="legs">Jambes</option>
         <option value="arms">Bras</option>
         <option value="chest">Torse</option>
         <option value="head">Tête</option>
         <option value="overall">Intégral</option>        
       </select>
+      </div>
     </div>
   </div>
-</div>
-<div class="preview">
-  <app-equipment [data]="data"></app-equipment>
+  <div class="preview">
+    <app-equipment [data]="data"></app-equipment>
+  </div>
+
 </div>
 <div class="actions">
-  <button *ngIf="!data.id" (click)="save()">Ajouter</button>
-  <button *ngIf="data.id" (click)="save()">Mettre à jour</button>
-  <button *ngIf="data.id" (click)="delete()">Supprimer</button>
+  <button class="btn-success fa fa-plus-circle" *ngIf="!data.id" (click)="save()">Ajouter</button>
+  <button class="btn-success fa fa-save" *ngIf="data.id" (click)="save()">Mettre à jour</button>
+  <button class="btn-danger fa fa-trash-o" *ngIf="data.id" (click)="delete()">Supprimer</button>
 </div>

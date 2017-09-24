@@ -16,13 +16,18 @@ export class WeaponService {
     return this.db.list("/weapons");
   }
 
-  addOrUpdate(eqp: Weapon) {
-    if(eqp.id) {
-      this.db.object("/weapons/" + eqp.id).update(eqp);
+  addOrUpdate(wpn: Weapon) {
+    if(wpn.id) {
+      this.db.object("/weapons/" + wpn.id).update(wpn);
     } else {
-      eqp.id = this.tools.generateUUID();
-      this.db.database.ref().child("/weapons/" + eqp.id).set(eqp);
+      wpn.id = this.tools.generateUUID();
+      this.db.database.ref().child("/weapons/" + wpn.id).set(wpn);
     }
+  }
+
+  delete(wpn: Weapon) {
+    this.db.object("/weapons/" + wpn.id).remove();
+    wpn.id = undefined;
   }
 
 }

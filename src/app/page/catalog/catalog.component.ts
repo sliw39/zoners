@@ -7,6 +7,7 @@ import { WeaponService } from '../../assets/weapon/weapon.service';
 import { EquipmentService } from '../../assets/equipment/equipment.service';
 import { FullscreenService } from '../../common/fullscreen/fullscreen.service';
 import { EquipmentFormComponent } from '../../assets/equipment/equipment-form.component';
+import { WeaponFormComponent } from '../../assets/weapon/weapon-form.component';
 
 @Component({
   selector: 'app-catalog',
@@ -102,6 +103,9 @@ export class CatalogComponent implements OnInit {
     switch(itemType) {
       case "EQUIPMENT":
         this.fullscreenService.show(EquipmentFormComponent, item);
+        break;
+      case "WEAPON":
+        this.fullscreenService.show(WeaponFormComponent, item);
         break;
     }
   }
