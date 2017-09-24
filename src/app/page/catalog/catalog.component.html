@@ -1,9 +1,26 @@
 <div class="filter">
-  <input type="text" [(ngModel)]="searchText">
+  <input type="text" [(ngModel)]="searchText" placeholder="Rechercher...">
+</div>
+
+<div class="heading">
+  <h1>Armes</h1>
+  <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('WEAPON')">Ajouter</button></div>
 </div>
 <div class="weapons">
-  <app-weapon [data]="wpn" *ngFor="let wpn of weapons | async | itemFilter : searchText"></app-weapon>
+  <app-weapon [data]="wpn" 
+              (click)="selectItem('WEAPON', wpn)"
+              *ngFor="let wpn of weapons | async | itemFilter : searchText">
+  </app-weapon>
+</div>
+
+<div class="heading">
+  <h1>Equipements</h1>
+  <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('EQUIPMENT')">Ajouter</button></div>
 </div>
 <div class="equipments">
-  <app-equipment [data]="eqp" *ngFor="let eqp of equipments | async | itemFilter : searchText"></app-equipment>
+  <app-equipment [data]="eqp"
+                 (click)="selectItem('EQUIPMENT', eqp)"
+                 [ngClass]="{'selected': currentItem === eqp}"
+                 *ngFor="let eqp of equipments | async | itemFilter : searchText">
+  </app-equipment>
 </div>

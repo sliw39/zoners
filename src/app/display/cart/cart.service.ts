@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Equipment } from '../../assets/equipment/equipment.model';
 import { Weapon } from '../../assets/weapon/weapon.model';
-import { Item } from '../../assets/item.model';
+import { Item, ItemType } from '../../assets/item.model';
 import * as _ from "lodash";
 
 interface CartItem<T extends Item> {
@@ -24,7 +24,7 @@ export class CartService {
   }
   public cartChanged = new EventEmitter<Cart>();
 
-  add(item: Item, type: "WEAPON"|"EQUIPMENT", count = 1) {
+  add(item: Item, type: ItemType, count = 1) {
     switch(type) {
       case "WEAPON":
         this.addImpl(item, this.cart.weapons, count);

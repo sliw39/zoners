@@ -2,3 +2,16 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+.heading {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+app-equipment, app-weapon {
+    cursor: pointer;
+}
+app-weapon.selected, app-equipment.selected {
+    background-color: #E4E7F7;
+}

@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 
 @font-face {
     font-family: "stalker1";
@@ -6,4 +9,55 @@
 @font-face {
     font-family: "stalker2";
     src: url("/assets/fonts/stalker2.ttf") format("truetype");
+}
+
+button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 36px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+button:hover {
+    background-color: #bbb;
+}
+button:before {
+    margin-right: 5px;
+    line-height: 1em;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: 1px solid #3F9E4A;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+.btn-warning {
+    background-color: #E2BE5A;
+    border: 1px solid #927B3B;
+    color: white;
+}
+.btn-warning:hover {
+    background-color: #C9A352;
+}
+.btn-danger {
+    background-color: #E45B5B;
+    border: 1px solid #883636;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #C95252;
+}
+
+input {
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px;
 }

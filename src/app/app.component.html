@@ -1,7 +1,16 @@
-<div>
-  <button (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
-  <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+<div class="nav-header">
+  <div class="title"></div>
+  <div class="login">
+    <button class="btn-success fa fa-user-o" (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
+    <button class="btn-danger fa fa-power-off" (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+  </div>
 </div>
-<div>
-  <app-catalog *ngIf="(user | async)?.uid"></app-catalog>
+
+<div *ngIf="(user | async)?.uid" class="page-body">
+  <app-catalog (selectedItemChange)="selectItem($event)"></app-catalog>
+  <app-equipment-form *ngIf="currentItemType === 'EQUIPMENT'"
+                      [data]="currentItem">
+  </app-equipment-form>
 </div>
+
+<app-fullscreen></app-fullscreen>

@@ -4,7 +4,7 @@ import { Item } from "../item.model";
 export interface Equipment extends Item {
     isolation: RollValue;
     resistance: number;
-    durability: RollValue;
+    durability: number;
 
     set: string;
     type: string;

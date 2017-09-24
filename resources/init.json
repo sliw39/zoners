@@ -1,7 +1,7 @@
 {
-    "weapons": [
-        {
-            "id": 1,
+    "weapons": {
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b1" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b1",
             "name": "Makarov",
             "detail": "",
             "weight": 1,
@@ -31,8 +31,8 @@
             },
             "price": 400
         },
-        {
-            "id": 2,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b2" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b2",
             "name": "Fusil à canon scié",
             "detail": "",
             "weight": 2,
@@ -62,8 +62,8 @@
             },
             "price": 3000
         },
-        {
-            "id": 3,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b3" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b3",
             "name": "M1",
             "detail": "",
             "weight": 4,
@@ -93,8 +93,8 @@
             },
             "price": 4500
         },
-        {
-            "id": 4,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b4" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b4",
             "name": "AK-74u",
             "detail": "",
             "weight": 3,
@@ -124,8 +124,8 @@
             },
             "price": 3700
         },
-        {
-            "id": 5,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b5" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b5",
             "name": "Desert Eagle",
             "detail": "",
             "weight": 2,
@@ -155,8 +155,8 @@
             },
             "price": 7000
         },
-        {
-            "id": 6,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b6" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b6",
             "name": "SKS",
             "detail": "",
             "weight": 5,
@@ -186,8 +186,8 @@
             },
             "price": 8000
         },
-        {
-            "id": 7,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b7" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b7",
             "name": "AK-47",
             "detail": "",
             "weight": 4,
@@ -217,8 +217,8 @@
             },
             "price": 7000
         },
-        {
-            "id": 8,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b8" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b8",
             "name": "Beneli-M4",
             "detail": "",
             "weight": 3,
@@ -248,8 +248,8 @@
             },
             "price": 9500
         },
-        {
-            "id": 9,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2b9" : {
+            "id":"268f3e27-dbce-4c80-851e-5a78ddb3c2b9",
             "name": "L85",
             "detail": "",
             "weight": 4,
@@ -279,8 +279,8 @@
             },
             "price": 13800
         },
-        {
-            "id": 10,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c0" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c0",
             "name": "VSS Vintorez",
             "detail": "",
             "weight": 4,
@@ -310,8 +310,8 @@
             },
             "price": 23000
         },
-        {
-            "id": 11,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c1" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c1",
             "name": "SVD",
             "detail": "",
             "weight": 7,
@@ -341,8 +341,8 @@
             },
             "price": 17000
         },
-        {
-            "id": 12,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c2" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c2",
             "name": "Zastava M07",
             "detail": "verrou",
             "weight": 7,
@@ -372,8 +372,8 @@
             },
             "price": 21000
         },
-        {
-            "id": 13,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c3" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c3",
             "name": "SPAS 12",
             "detail": "",
             "weight": 6,
@@ -403,8 +403,8 @@
             },
             "price": 15000
         },
-        {
-            "id": 14,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c4" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c4",
             "name": "RPG 7",
             "detail": "",
             "weight": 12,
@@ -434,8 +434,8 @@
             },
             "price": 25000
         },
-        {
-            "id": 14,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c5" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c5",
             "name": "Galil AR",
             "detail": "",
             "weight": 5,
@@ -465,8 +465,8 @@
             },
             "price": 18000
         },
-        {
-            "id": 15,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c6" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c6",
             "name": "TAR-21",
             "detail": "",
             "weight": 3,
@@ -496,8 +496,8 @@
             },
             "price": 12500
         },
-        {
-            "id": 16,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c7" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c7",
             "name": "RPK-74",
             "detail": "rapide, lourde",
             "weight": 8,
@@ -527,8 +527,8 @@
             },
             "price": 25000
         },
-        {
-            "id": 17,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c8" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c8",
             "name": "PKM",
             "detail": "artillerie, lourde",
             "weight": 10,
@@ -558,8 +558,8 @@
             },
             "price": 35000
         },
-        {
-            "id": 18,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2c9" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2c9",
             "name": "AK-12",
             "detail": "",
             "weight": 4,
@@ -589,8 +589,8 @@
             },
             "price": 15000
         },
-        {
-            "id": 19,
+        "268f3e27-dbce-4c80-851e-5a78ddb3c2d0" : {
+            "id": "268f3e27-dbce-4c80-851e-5a78ddb3c2d0",
             "name": "Zastava M57",
             "detail": "",
             "weight": 1,
@@ -620,16 +620,16 @@
             },
             "price": 12000
         }
-    ],
-    "equipments": [
-        {
-            "type": "torse",
+    },
+    "equipments": {
+        "268f3e27-dbce-4c80-951e-5a78ddb3c200" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 1,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c200",
             "price": 2500,
             "name": "Veste en cuir",
             "durability": 4,
@@ -637,14 +637,14 @@
             "weight": 1,
             "resistance": 1
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c201" : {
+            "type": "head",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 2,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c201",
             "price": 500,
             "name": "Capuche en cuir",
             "durability": 4,
@@ -652,14 +652,14 @@
             "weight": 0,
             "resistance": 1
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c202" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 3,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c202",
             "price": 1000,
             "name": "Pantalon de cuir",
             "durability": 4,
@@ -667,14 +667,14 @@
             "weight": 1,
             "resistance": 1
         },
-        {
-            "type": "bras",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c203" : {
+            "type": "arms",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 4,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c203",
             "price": 200,
             "name": "Gants en cuir",
             "durability": 4,
@@ -682,14 +682,14 @@
             "weight": 0,
             "resistance": 1
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c204" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 5,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c204",
             "price": 5400,
             "name": "Veste en cuir renforcé",
             "durability": 5,
@@ -697,14 +697,14 @@
             "weight": 3,
             "resistance": 2
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c205" : {
+            "type": "head",
             "isolation": {
                 "bonus": "1",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 6,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c205",
             "price": 1200,
             "name": "Capuche en cuir renforcé",
             "durability": 5,
@@ -712,14 +712,14 @@
             "weight": 1,
             "resistance": 1
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c206" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 7,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c206",
             "price": 3000,
             "name": "Pantalon de cuir renforcé",
             "durability": 5,
@@ -727,14 +727,14 @@
             "weight": 2,
             "resistance": 2
         },
-        {
-            "type": "bras",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c207" : {
+            "type": "arms",
             "isolation": {
                 "bonus": "1",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 8,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c207",
             "price": 2000,
             "name": "Gants en cuir renforcé",
             "durability": 5,
@@ -742,14 +742,14 @@
             "weight": 0,
             "resistance": 1
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c208" : {
+            "type": "head",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 9,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c208",
             "price": 11500,
             "name": "Masque à gaz",
             "durability": 1,
@@ -757,14 +757,14 @@
             "weight": 2,
             "resistance": 1
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c209" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 10,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c209",
             "price": 13000,
             "name": "Veste en cuir amélioré",
             "durability": 5,
@@ -772,14 +772,14 @@
             "weight": 4,
             "resistance": 2
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c210" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "1",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 11,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c210",
             "price": 7000,
             "name": "Pantalon en cuir amélioré",
             "durability": 5,
@@ -787,14 +787,14 @@
             "weight": 2,
             "resistance": 2
         },
-        {
-            "type": "bras",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c211" : {
+            "type": "arms",
             "isolation": {
                 "bonus": "2",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 12,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c211",
             "price": 2500,
             "name": "Gants en cuir isolés",
             "durability": 2,
@@ -802,14 +802,14 @@
             "weight": 0,
             "resistance": 1
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c212" : {
+            "type": "head",
             "isolation": {
                 "bonus": "2",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 13,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c212",
             "price": 8000,
             "name": "Casque militaire ancien",
             "durability": 2,
@@ -817,14 +817,14 @@
             "weight": 1,
             "resistance": 3
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c213" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "2",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 14,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c213",
             "price": 13500,
             "name": "Gilet SN-42",
             "durability": 10,
@@ -832,14 +832,14 @@
             "weight": 10,
             "resistance": 5
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c214" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 15,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c214",
             "price": 5000,
             "name": "Pantalon de treillis",
             "durability": 6,
@@ -847,14 +847,14 @@
             "weight": 0,
             "resistance": 1
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c215" : {
+            "type": "head",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 16,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c215",
             "price": 17000,
             "name": "Casque militaire standard",
             "durability": 2,
@@ -862,14 +862,14 @@
             "weight": 2,
             "resistance": 4
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c216" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 17,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c216",
             "price": 15000,
             "name": "Gilet pare-balle léger",
             "durability": 7,
@@ -877,14 +877,14 @@
             "weight": 4,
             "resistance": 4
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c217" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "1",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 18,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c217",
             "price": 8500,
             "name": "Pantalon de treillis molletonné",
             "durability": 8,
@@ -892,14 +892,14 @@
             "weight": 1,
             "resistance": 1
         },
-        {
-            "type": "bras",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c218" : {
+            "type": "arms",
             "isolation": {
                 "bonus": "1",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 19,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c218",
             "price": 9500,
             "name": "Gants standards",
             "durability": 5,
@@ -907,14 +907,14 @@
             "weight": 0,
             "resistance": 2
         },
-        {
-            "type": "intégral",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c219" : {
+            "type": "overall",
             "isolation": {
                 "bonus": "0",
                 "dice": "4"
             },
             "detail": " ",
-            "id": 20,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c219",
             "price": 70000,
             "name": "Combinaison SSP-99",
             "durability": 3,
@@ -922,14 +922,14 @@
             "weight": 7,
             "resistance": 1
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c220" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "4",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 21,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c220",
             "price": 30000,
             "name": "Réservoir d'oxygène",
             "durability": 1,
@@ -937,14 +937,14 @@
             "weight": 4,
             "resistance": 10
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c221" : {
+            "type": "head",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 22,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c221",
             "price": 15000,
             "name": "Circuit d'air PSZ",
             "durability": 1,
@@ -952,14 +952,14 @@
             "weight": 1,
             "resistance": 0
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c222" : {
+            "type": "head",
             "isolation": {
                 "bonus": "2",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 23,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c222",
             "price": 23000,
             "name": "Casque militaire PSZ",
             "durability": 3,
@@ -967,14 +967,14 @@
             "weight": 2,
             "resistance": 6
         },
-        {
-            "type": "torse",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c223" : {
+            "type": "chest",
             "isolation": {
                 "bonus": "0",
                 "dice": "1"
             },
             "detail": " ",
-            "id": 24,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c223",
             "price": 30000,
             "name": "Gilet pare-balle PSZ",
             "durability": 8,
@@ -982,14 +982,14 @@
             "weight": 5,
             "resistance": 6
         },
-        {
-            "type": "jambe",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c224" : {
+            "type": "legs",
             "isolation": {
                 "bonus": "2",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 25,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c224",
             "price": 16000,
             "name": "Pantalon PSZ",
             "durability": 4,
@@ -997,14 +997,14 @@
             "weight": 2,
             "resistance": 4
         },
-        {
-            "type": "bras",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c225" : {
+            "type": "arms",
             "isolation": {
                 "bonus": "0",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 26,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c225",
             "price": 14000,
             "name": "Gants PSZ",
             "durability": 4,
@@ -1012,14 +1012,14 @@
             "weight": 1,
             "resistance": 4
         },
-        {
-            "type": "intégral",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c226" : {
+            "type": "overall",
             "isolation": {
                 "bonus": "0",
                 "dice": "3"
             },
             "detail": " ",
-            "id": 27,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c226",
             "price": 85000,
             "name": "Combinaison SEVA",
             "durability": 5,
@@ -1027,14 +1027,14 @@
             "weight": 6,
             "resistance": 5
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c227" : {
+            "type": "head",
             "isolation": {
                 "bonus": "3",
                 "dice": "0"
             },
             "detail": " ",
-            "id": 28,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c227",
             "price": 20000,
             "name": "Casque SEVA",
             "durability": 4,
@@ -1042,14 +1042,14 @@
             "weight": 2,
             "resistance": 5
         },
-        {
-            "type": "intégral",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c228" : {
+            "type": "overall",
             "isolation": {
                 "bonus": "0",
                 "dice": "3"
             },
             "detail": " ",
-            "id": 29,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c228",
             "price": 150000,
             "name": "Exosquelette",
             "durability": 5,
@@ -1057,14 +1057,14 @@
             "weight": 15,
             "resistance": 5
         },
-        {
-            "type": "tête",
+        "268f3e27-dbce-4c80-951e-5a78ddb3c229" : {
+            "type": "head",
             "isolation": {
                 "bonus": "0",
                 "dice": "3"
             },
             "detail": " ",
-            "id": 30,
+            "id": "268f3e27-dbce-4c80-951e-5a78ddb3c229",
             "price": 4000,
             "name": "Casque en cuivre",
             "durability": 1,
@@ -1072,5 +1072,5 @@
             "weight": 1,
             "resistance": 0
         }
-    ]
+    }
 }

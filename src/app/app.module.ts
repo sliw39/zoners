@@ -20,6 +20,11 @@ import { CartComponent } from './display/cart/cart.component';
 import { CatalogComponent } from './page/catalog/catalog.component';
 import { ItemFilterPipe } from './common/item-filter.pipe';
 import { CartService } from './display/cart/cart.service';
+import { ToolsService } from './common/tools.service';
+import { EquipmentFormComponent } from './assets/equipment/equipment-form.component';
+import { FsContentDirective } from './common/fullscreen/fs-content.directive';
+import { FullscreenComponent } from './common/fullscreen/fullscreen.component';
+import { FullscreenService } from './common/fullscreen/fullscreen.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,10 @@ import { CartService } from './display/cart/cart.service';
     PrintablePageComponent,
     CartComponent,
     CatalogComponent,
-    ItemFilterPipe
+    ItemFilterPipe,
+    EquipmentFormComponent,
+    FsContentDirective,
+    FullscreenComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,7 @@ import { CartService } from './display/cart/cart.service';
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [ CartService ],
+  providers: [ CartService, ToolsService, FullscreenService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
