@@ -9,6 +9,8 @@
 <div class="weapons">
   <app-weapon [data]="wpn" 
               (click)="selectItem('WEAPON', wpn)"
+              (dblclick)="openItem('WEAPON', wpn)"
+              [ngClass]="{'selected': currentItem === wpn}"
               *ngFor="let wpn of weapons | async | itemFilter : searchText">
   </app-weapon>
 </div>

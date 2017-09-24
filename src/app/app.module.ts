@@ -25,6 +25,8 @@ import { EquipmentFormComponent } from './assets/equipment/equipment-form.compon
 import { FsContentDirective } from './common/fullscreen/fs-content.directive';
 import { FullscreenComponent } from './common/fullscreen/fullscreen.component';
 import { FullscreenService } from './common/fullscreen/fullscreen.service';
+import { ClickStopPropagationDirective } from './common/events/click-stop-propagation.directive';
+import { WeaponFormComponent } from './assets/weapon/weapon-form.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { FullscreenService } from './common/fullscreen/fullscreen.service';
     ItemFilterPipe,
     EquipmentFormComponent,
     FsContentDirective,
-    FullscreenComponent
+    FullscreenComponent,
+    ClickStopPropagationDirective,
+    WeaponFormComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,8 @@ import { FullscreenService } from './common/fullscreen/fullscreen.service';
   providers: [ CartService, ToolsService, FullscreenService ],
   bootstrap: [AppComponent],
   entryComponents: [
-    EquipmentFormComponent
+    EquipmentFormComponent,
+    WeaponFormComponent
   ]
 })
 export class AppModule { }

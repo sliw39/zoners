@@ -31,7 +31,7 @@ export class FullscreenComponent implements OnInit {
     let componentRef = viewContainerRef.createComponent(componentFactory);
     (<FsContentDirective>componentRef.instance).data = data;
 
-    (this.elRef.nativeElement as HTMLElement).style.display = "flex";
+    (this.elRef.nativeElement as HTMLElement).style.display = "block";
   }
 
   hide() {
