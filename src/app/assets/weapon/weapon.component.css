@@ -69,3 +69,12 @@
     border: 1px solid #ddd;
     height: 4.5mm;
 }
+
+
+app-cart-item {
+    display: none;
+}
+
+:host:hover app-cart-item, :host.selected app-cart-item {
+    display: block;   
+}
