@@ -71,10 +71,10 @@
 }
 
 
-app-cart-item {
+app-cart-badge {
     display: none;
 }
 
-:host:hover app-cart-item, :host.selected app-cart-item {
+:host:hover app-cart-badge, :host.selected app-cart-badge {
     display: block;   
 }
