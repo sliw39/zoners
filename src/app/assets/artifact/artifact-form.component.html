@@ -1,0 +1,89 @@
+<div class="body">
+  <div class="form">
+    <div class="line">
+      <div class="label">Nom :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.name"></div>
+    </div>
+    <div class="line">
+      <div class="label">Détail :</div>
+      <div class="value"><textarea [(ngModel)]="data.detail"></textarea></div>
+    </div>
+    <div class="line">
+      <div class="label">Prix :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.price"></div>
+    </div>
+    <div class="line">
+      <div class="label">Poids :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.weight"></div>
+    </div>
+
+    <div class="line-list">
+      <div class="header">
+        <h1>Lignes :</h1>
+        <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="addLine()">Ajouter</button></div>
+      </div>
+      <div class="list-container">
+        <div class="list-item" *ngFor="let line of data.lines">
+          <input type="text" [(ngModel)]="line.label" placeholder="Nom">
+
+          <select [(ngModel)]="line.type" (ngModelChange)="initDynamicField(line)">
+            <option value="STRING">Texte</option>
+            <option value="DOT">Nombre</option>
+            <option value="ROLLVALUE">Jet de dé</option>
+          </select>
+
+          <div class="value" *ngIf="line.type === 'DOT'">
+            <input type="number" [(ngModel)]="line.data">
+          </div>
+          <div class="value" *ngIf="line.type === 'ROLLVALUE'">
+            <input type="number" [(ngModel)]="line.data.dice">D+<input type="number" [(ngModel)]="line.data.bonus">
+          </div>
+          <div class="value" *ngIf="line.type === 'STRING'">
+            <input type="text" [(ngModel)]="line.data">
+          </div>
+
+          <div class="action btn-danger" (click)="removeLine(line)"><i class="fa fa-trash"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-list">
+      <div class="header">
+        <h1>Blocs :</h1>
+        <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="addBlock()">Ajouter</button></div>
+      </div>
+      <div class="list-container">
+        <div class="list-item" *ngFor="let block of data.blocks">
+          <input type="text" [(ngModel)]="block.label" placeholder="Nom">
+
+          <select [(ngModel)]="block.type" (ngModelChange)="initDynamicField(block)">
+              <option value="STRING">Texte</option>
+              <option value="DOT">Nombre</option>
+              <option value="ROLLVALUE">Jet de dé</option>
+            </select>
+
+          <div class="value" *ngIf="block.type === 'DOT'">
+            <input type="number" [(ngModel)]="block.data">
+          </div>
+          <div class="value" *ngIf="block.type === 'ROLLVALUE'">
+            <input type="number" [(ngModel)]="block.data.dice">D+<input type="number" [(ngModel)]="block.data.bonus">
+          </div>
+          <div class="value" *ngIf="block.type === 'STRING'">
+            <input type="text" [(ngModel)]="block.data">
+          </div>
+
+          <div class="action btn-danger" (click)="removeBlock(block)"><i class="fa fa-trash"></i></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="preview">
+    <app-artifact [data]="data"></app-artifact>
+  </div>
+</div>
+<div class="actions">
+  <button class="btn-success fa fa-plus-circle" *ngIf="!data.id" (click)="save()">Ajouter</button>
+  <button class="btn-success fa fa-save" *ngIf="data.id" (click)="save()">Mettre à jour</button>
+  <button class="btn-danger fa fa-trash-o" *ngIf="data.id" (click)="delete()">Supprimer</button>
+</div>

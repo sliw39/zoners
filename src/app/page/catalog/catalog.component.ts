@@ -11,18 +11,22 @@ import { WeaponFormComponent } from '../../assets/weapon/weapon-form.component';
 import { MeleeWeapon } from '../../assets/melee-weapon/melee-weapon.model';
 import { MeleeWeaponFormComponent } from '../../assets/melee-weapon/melee-weapon-form.component';
 import { MeleeWeaponService } from '../../assets/melee-weapon/melee-weapon.service';
+import { ArtifactFormComponent } from '../../assets/artifact/artifact-form.component';
+import { ArtifactService } from '../../assets/artifact/artifact.service';
+import { Artifact } from '../../assets/artifact/artifact.model';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css'],
-  providers: [ EquipmentService, WeaponService, MeleeWeaponService ]
+  providers: [ EquipmentService, WeaponService, MeleeWeaponService, ArtifactService ]
 })
 export class CatalogComponent implements OnInit {
 
   weapons: Observable<Weapon[]>;
   equipments: Observable<Equipment[]>;
   meleeWeapons: Observable<MeleeWeapon[]>;
+  artifacts: Observable<Artifact[]>;
 
   currentItemType: ItemType;
   currentItem: Item;
@@ -36,6 +40,7 @@ export class CatalogComponent implements OnInit {
     private equipmentService: EquipmentService,
     private weaponService: WeaponService,
     private meleeWeaponService: MeleeWeaponService,
+    private artifactService: ArtifactService,
     private fullscreenService: FullscreenService
   ) { }
 
@@ -43,74 +48,19 @@ export class CatalogComponent implements OnInit {
     this.weapons = this.weaponService.list();
     this.equipments = this.equipmentService.list();
     this.meleeWeapons = this.meleeWeaponService.list();
+    this.artifacts = this.artifactService.list();
   }
 
   createItem(itemType: ItemType) {
     this.currentItemType = itemType;
     if(itemType === "EQUIPMENT") {
-      this.currentItem = {
-        id: null,
-        name: "",
-        detail: "",
-        durability: 1,
-        isolation: {
-          dice: 1,
-          bonus: 0
-        },
-        price: 0,
-        resistance: 0,
-        set: "",
-        type: "overall",
-        weight: 0
-      } as Equipment;
+      this.currentItem = this.equipmentService.createEquipement();
     } else if(itemType === "WEAPON") {
-      this.currentItem = {
-        id: null,
-        name: "",
-        detail: "",
-        accuracy: {
-          veryshort: { dice: 0 },
-          short: { dice: 0 },
-          medium: { dice: 0 },
-          long: { dice: 0 },
-          verylong: { dice: 0 }
-        },
-        ammo: 6,
-        ammotype: "spe.",
-        handling: 1,
-        power: {
-          dice: 0,
-          bonus: 0
-        },
-        price: 0,
-        weight: 0
-      } as Weapon;
+      this.currentItem = this.weaponService.createWeapon();
     } else if(itemType === "MELEE") {
-      this.currentItem = {
-        id: null,
-        name: "",
-        detail: "",
-        price: 0,
-        weight: 0,
-        durability: 1,
-        handling: 1,
-        power: {
-          dice: 0,
-          bonus: 0
-        },
-        slash: {
-          attack: { dice: 0 },
-          defense: { dice: 0 }
-        },
-        smash: {
-          attack: { dice: 0 },
-          defense: { dice: 0 }
-        },
-        thrust: {
-          attack: { dice: 0 },
-          defense: { dice: 0 }
-        }
-      } as MeleeWeapon;
+      this.currentItem = this.meleeWeaponService.createWeapon();
+    } else if(itemType === "ARTIFACT") {
+      this.currentItem = this.artifactService.createArtifact();
     }
 
     this.selectedItemChange.emit({
@@ -141,6 +91,9 @@ export class CatalogComponent implements OnInit {
         break;
       case "MELEE":
         this.fullscreenService.show(MeleeWeaponFormComponent, item);
+        break;
+      case "ARTIFACT":
+        this.fullscreenService.show(ArtifactFormComponent, item);
         break;
     }
   }

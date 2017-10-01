@@ -30,4 +30,28 @@ export class WeaponService {
     wpn.id = undefined;
   }
 
+  createWeapon() {
+    return {
+      id: null,
+      name: "",
+      detail: "",
+      accuracy: {
+        veryshort: { dice: 0 },
+        short: { dice: 0 },
+        medium: { dice: 0 },
+        long: { dice: 0 },
+        verylong: { dice: 0 }
+      },
+      ammo: 6,
+      ammotype: "spe.",
+      handling: 1,
+      power: {
+        dice: 0,
+        bonus: 0
+      },
+      price: 0,
+      weight: 0
+    } as Weapon;
+  }
+
 }

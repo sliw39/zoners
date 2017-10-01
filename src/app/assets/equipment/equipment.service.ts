@@ -31,4 +31,22 @@ export class EquipmentService {
     eqp.id = undefined;
   }
 
+  createEquipement() {
+    return {
+        id: null,
+        name: "",
+        detail: "",
+        durability: 1,
+        isolation: {
+            dice: 1,
+            bonus: 0
+        },
+        price: 0,
+        resistance: 0,
+        set: "",
+        type: "overall",
+        weight: 0
+    } as Equipment;
+}
+
 }

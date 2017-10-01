@@ -29,4 +29,32 @@ export class MeleeWeaponService {
     this.db.object("/melee-weapons/" + wpn.id).remove();
     wpn.id = undefined;
   }
+
+  createWeapon() {
+    return {
+      id: null,
+      name: "",
+      detail: "",
+      price: 0,
+      weight: 0,
+      durability: 1,
+      handling: 1,
+      power: {
+        dice: 0,
+        bonus: 0
+      },
+      slash: {
+        attack: { dice: 0 },
+        defense: { dice: 0 }
+      },
+      smash: {
+        attack: { dice: 0 },
+        defense: { dice: 0 }
+      },
+      thrust: {
+        attack: { dice: 0 },
+        defense: { dice: 0 }
+      }
+    } as MeleeWeapon;
+  }
 }

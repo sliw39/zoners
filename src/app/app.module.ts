@@ -30,6 +30,8 @@ import { WeaponFormComponent } from './assets/weapon/weapon-form.component';
 import { CartBadgeComponent } from './display/cart/cart-badge/cart-badge.component';
 import { MeleeWeaponComponent } from './assets/melee-weapon/melee-weapon.component';
 import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-form.component';
+import { ArtifactComponent } from './assets/artifact/artifact.component';
+import { ArtifactFormComponent } from './assets/artifact/artifact-form.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-for
     WeaponFormComponent,
     CartBadgeComponent,
     MeleeWeaponComponent,
-    MeleeWeaponFormComponent
+    MeleeWeaponFormComponent,
+    ArtifactComponent,
+    ArtifactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-for
   entryComponents: [
     EquipmentFormComponent,
     WeaponFormComponent,
-    MeleeWeaponFormComponent
+    MeleeWeaponFormComponent,
+    ArtifactFormComponent
   ]
 })
 export class AppModule { }

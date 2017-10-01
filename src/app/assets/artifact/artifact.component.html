@@ -1,0 +1,37 @@
+<div class="title">{{data.name}}</div>
+<div class="lines">
+  <div class="line" *ngFor="let line of data.lines">
+    <div class="label">{{line.label}}</div>
+
+    <div class="value" *ngIf="line.type === 'DOT'">
+      <app-dotline [data]="line.data"></app-dotline>
+    </div>
+    <div class="value" *ngIf="line.type === 'ROLLVALUE'">
+      <app-dice [data]="line.data"></app-dice>
+    </div>
+    <div class="value" *ngIf="line.type === 'STRING'">
+      <span>{{line.data}}</span>
+    </div>
+
+  </div>
+</div>
+<div class="blocks stats">
+  <div class="block stat" *ngFor="let block of data.blocks">
+    <div class="label stat-head"><i class="fa" [ngClass]="block.label"></i></div>
+
+    <div class="value stat-body" *ngIf="block.type === 'DOT'">
+      <span>{{block.data}}</span>
+    </div>
+    <div class="value stat-body" *ngIf="block.type === 'ROLLVALUE'">
+      {{block.data.dice}}D+{{block.data.bonus}}
+    </div>
+    <div class="value stat-body" *ngIf="block.type === 'STRING'">
+      <span>{{block.data}}</span>
+    </div>
+
+  </div>
+  <div class="block">
+      <div class="label"><i class="fa fa-scale"></i></div>
+      <div class="value">{{data.scale}}</div>
+  </div>
+</div>
