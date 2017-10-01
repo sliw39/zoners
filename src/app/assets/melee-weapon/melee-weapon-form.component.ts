@@ -3,12 +3,12 @@ import { MeleeWeapon } from './melee-weapon.model';
 import { MeleeWeaponService } from './melee-weapon.service';
 
 @Component({
-  selector: 'app-weapon-form',
-  templateUrl: './weapon-form.component.html',
-  styleUrls: ['./weapon-form.component.css'],
+  selector: 'app-melee-weapon-form',
+  templateUrl: './melee-weapon-form.component.html',
+  styleUrls: ['./melee-weapon-form.component.css'],
   providers: [ MeleeWeaponService ]
 })
-export class WeaponFormComponent implements OnInit {
+export class MeleeWeaponFormComponent implements OnInit {
 
   @Input() data: MeleeWeapon;
 

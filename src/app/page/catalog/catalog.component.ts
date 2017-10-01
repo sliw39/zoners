@@ -8,17 +8,21 @@ import { EquipmentService } from '../../assets/equipment/equipment.service';
 import { FullscreenService } from '../../common/fullscreen/fullscreen.service';
 import { EquipmentFormComponent } from '../../assets/equipment/equipment-form.component';
 import { WeaponFormComponent } from '../../assets/weapon/weapon-form.component';
+import { MeleeWeapon } from '../../assets/melee-weapon/melee-weapon.model';
+import { MeleeWeaponFormComponent } from '../../assets/melee-weapon/melee-weapon-form.component';
+import { MeleeWeaponService } from '../../assets/melee-weapon/melee-weapon.service';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css'],
-  providers: [ EquipmentService, WeaponService ]
+  providers: [ EquipmentService, WeaponService, MeleeWeaponService ]
 })
 export class CatalogComponent implements OnInit {
 
   weapons: Observable<Weapon[]>;
   equipments: Observable<Equipment[]>;
+  meleeWeapons: Observable<MeleeWeapon[]>;
 
   currentItemType: ItemType;
   currentItem: Item;
@@ -31,12 +35,14 @@ export class CatalogComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private weaponService: WeaponService,
+    private meleeWeaponService: MeleeWeaponService,
     private fullscreenService: FullscreenService
   ) { }
 
   ngOnInit() {
     this.weapons = this.weaponService.list();
     this.equipments = this.equipmentService.list();
+    this.meleeWeapons = this.meleeWeaponService.list();
   }
 
   createItem(itemType: ItemType) {
@@ -79,6 +85,32 @@ export class CatalogComponent implements OnInit {
         price: 0,
         weight: 0
       } as Weapon;
+    } else if(itemType === "MELEE") {
+      this.currentItem = {
+        id: null,
+        name: "",
+        detail: "",
+        price: 0,
+        weight: 0,
+        durability: 1,
+        handling: 1,
+        power: {
+          dice: 0,
+          bonus: 0
+        },
+        slash: {
+          attack: { dice: 0 },
+          defense: { dice: 0 }
+        },
+        smash: {
+          attack: { dice: 0 },
+          defense: { dice: 0 }
+        },
+        thrust: {
+          attack: { dice: 0 },
+          defense: { dice: 0 }
+        }
+      } as MeleeWeapon;
     }
 
     this.selectedItemChange.emit({
@@ -106,6 +138,9 @@ export class CatalogComponent implements OnInit {
         break;
       case "WEAPON":
         this.fullscreenService.show(WeaponFormComponent, item);
+        break;
+      case "MELEE":
+        this.fullscreenService.show(MeleeWeaponFormComponent, item);
         break;
     }
   }

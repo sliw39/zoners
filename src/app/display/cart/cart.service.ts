@@ -23,7 +23,7 @@ export class CartService {
   public cartChanged = new EventEmitter<CartItem[]>();
 
   add(item: Item, type: ItemType, count = 1) {
-    let cartItem = _.findWhere(this.cart, i => i.item === item);
+    let cartItem = _.find(this.cart, i => i.item === item);
     if(!cartItem) {
       cartItem = {
         item: item,
@@ -35,7 +35,7 @@ export class CartService {
 
     cartItem.count += count;
 
-    this.cartChanged.emit(cartItem);
+    this.cartChanged.emit(this.cart);
   }
 
   increment(cartItem: CartItem) {

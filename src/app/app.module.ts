@@ -63,7 +63,8 @@ import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-for
   bootstrap: [AppComponent],
   entryComponents: [
     EquipmentFormComponent,
-    WeaponFormComponent
+    WeaponFormComponent,
+    MeleeWeaponFormComponent
   ]
 })
 export class AppModule { }

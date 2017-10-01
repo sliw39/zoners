@@ -21,7 +21,8 @@
 .title {
     font-family: "stalker1";
     font-size: 20px;
-    margin-bottom: 8mm;
+    margin-bottom: 4mm;
+    min-height: 22px;
 }
 
 .ammo {
@@ -36,7 +37,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin-bottom: 1mm;
+    margin-bottom: 1.3mm;
 }
 .label {
     width: 35%;
@@ -45,9 +46,12 @@
     display: flex;
     flex-flow: column nowrap;
 }
-.data_line {
+.data-line {
     display: flex;
     flex-flow: row nowrap;
+}
+.data-line > i.fa {
+    width: 14px;
 }
 
 .stats {
@@ -58,7 +62,7 @@
     padding-right: 1mm;
 }
 .stat {
-    width: 12mm;
+    width: 16mm;
     line-height: 12px;
 }
 .stat > * {

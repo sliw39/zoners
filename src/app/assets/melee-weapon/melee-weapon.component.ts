@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MeleeWeapon } from './melee-weapon.model';
 
 @Component({
@@ -7,6 +7,8 @@ import { MeleeWeapon } from './melee-weapon.model';
   styleUrls: ['./melee-weapon.component.css']
 })
 export class MeleeWeaponComponent implements OnInit {
+
+  @Input() data: MeleeWeapon;
 
   constructor() { }
 
