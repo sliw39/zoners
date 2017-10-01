@@ -3,47 +3,49 @@ import { Equipment } from '../../assets/equipment/equipment.model';
 import { Weapon } from '../../assets/weapon/weapon.model';
 import { Item, ItemType } from '../../assets/item.model';
 import * as _ from "lodash";
+import { Observable } from 'rxjs/Observable';
 
-interface CartItem<T extends Item> {
-  item: T;
+interface CartItem {
+  item: Item;
   count: number;
+  type: ItemType;
 }
 
-interface Cart {
-  weapons: CartItem<Weapon>[];
-  equipments: CartItem<Equipment>[]
+function subcriber() {
+
 }
 
 @Injectable()
 export class CartService {
   constructor() { }
 
-  private cart = {
-    weapons: [],
-    equipments: []
-  }
-  public cartChanged = new EventEmitter<Cart>();
+  private cart: CartItem[] = []
+  public cartChanged = new EventEmitter<CartItem[]>();
 
   add(item: Item, type: ItemType, count = 1) {
-    switch(type) {
-      case "WEAPON":
-        this.addImpl(item, this.cart.weapons, count);
-        break;
-      case "EQUIPMENT":
-        this.addImpl(item, this.cart.equipments, count);
-        break;
-      default:
-        throw "Unknown type " + type;
+    let cartItem = _.findWhere(this.cart, i => i.item === item);
+    if(!cartItem) {
+      cartItem = {
+        item: item,
+        type: type,
+        count: 0
+      }
+      this.cart.push(cartItem);
     }
-    this.cartChanged.emit(this.cart);
+
+    cartItem.count += count;
+
+    this.cartChanged.emit(cartItem);
   }
 
-  private addImpl<T extends Item>(item: T, list: CartItem<T>[], count: number) {
-    let itemTmp = _.find<CartItem<T>>(this.cart.weapons, it => it.item.id === item.id);
-    if(!itemTmp) {
-      itemTmp = {item: item, count: 0};
-      this.cart.weapons.push(itemTmp);
+  increment(cartItem: CartItem) {
+    cartItem.count++;
+    this.cartChanged.emit(this.cart);
+  }
+  decrement(cartItem: CartItem) {
+    if(--cartItem.count <= 0) {
+      this.cart.splice(this.cart.indexOf(cartItem), 1);
     }
-    itemTmp.count += count;
+    this.cartChanged.emit(this.cart);
   }
 }

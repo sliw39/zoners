@@ -28,6 +28,7 @@ import { FullscreenService } from './common/fullscreen/fullscreen.service';
 import { ClickStopPropagationDirective } from './common/events/click-stop-propagation.directive';
 import { WeaponFormComponent } from './assets/weapon/weapon-form.component';
 import { CartBadgeComponent } from './display/cart/cart-badge/cart-badge.component';
+import { MeleeWeaponComponent } from './assets/melee-weapon/melee-weapon.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { CartBadgeComponent } from './display/cart/cart-badge/cart-badge.compone
     FullscreenComponent,
     ClickStopPropagationDirective,
     WeaponFormComponent,
-    CartBadgeComponent
+    CartBadgeComponent,
+    MeleeWeaponComponent
   ],
   imports: [
     BrowserModule,

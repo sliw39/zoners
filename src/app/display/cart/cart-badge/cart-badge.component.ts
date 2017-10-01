@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item, ItemType } from '../../../assets/item.model';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart-badge',
@@ -11,11 +12,12 @@ export class CartBadgeComponent implements OnInit {
   @Input() data: Item;
   @Input() type: ItemType;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit() {
   }
 
   addToCart() {
+    this.cartService.add(this.data, this.type);
   }
 }
