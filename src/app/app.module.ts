@@ -29,6 +29,7 @@ import { ClickStopPropagationDirective } from './common/events/click-stop-propag
 import { WeaponFormComponent } from './assets/weapon/weapon-form.component';
 import { CartBadgeComponent } from './display/cart/cart-badge/cart-badge.component';
 import { MeleeWeaponComponent } from './assets/melee-weapon/melee-weapon.component';
+import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-form.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { MeleeWeaponComponent } from './assets/melee-weapon/melee-weapon.compone
     ClickStopPropagationDirective,
     WeaponFormComponent,
     CartBadgeComponent,
-    MeleeWeaponComponent
+    MeleeWeaponComponent,
+    MeleeWeaponFormComponent
   ],
   imports: [
     BrowserModule,
