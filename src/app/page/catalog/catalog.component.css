@@ -9,9 +9,9 @@
     align-items: center;
 }
 
-app-equipment, app-weapon {
+.catalog-item {
     cursor: pointer;
 }
-app-weapon.selected, app-equipment.selected {
+.catalog-item.selected {
     background-color: #E4E7F7;
 }
