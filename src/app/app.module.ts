@@ -32,6 +32,8 @@ import { MeleeWeaponComponent } from './assets/melee-weapon/melee-weapon.compone
 import { MeleeWeaponFormComponent } from './assets/melee-weapon/melee-weapon-form.component';
 import { ArtifactComponent } from './assets/artifact/artifact.component';
 import { ArtifactFormComponent } from './assets/artifact/artifact-form.component';
+import { MiscComponent } from './assets/misc/misc.component';
+import { MiscFormComponent } from './assets/misc/misc-form.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ArtifactFormComponent } from './assets/artifact/artifact-form.component
     MeleeWeaponComponent,
     MeleeWeaponFormComponent,
     ArtifactComponent,
-    ArtifactFormComponent
+    ArtifactFormComponent,
+    MiscComponent,
+    MiscFormComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +73,8 @@ import { ArtifactFormComponent } from './assets/artifact/artifact-form.component
     EquipmentFormComponent,
     WeaponFormComponent,
     MeleeWeaponFormComponent,
-    ArtifactFormComponent
+    ArtifactFormComponent,
+    MiscFormComponent
   ]
 })
 export class AppModule { }

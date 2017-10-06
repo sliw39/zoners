@@ -7,12 +7,8 @@
   <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('WEAPON')">Ajouter</button></div>
 </div>
 <div class="weapons">
-  <app-weapon class="catalog-item"
-              [data]="wpn" 
-              (click)="selectItem('WEAPON', wpn)"
-              (dblclick)="openItem('WEAPON', wpn)"
-              [ngClass]="{'selected': currentItem === wpn}"
-              *ngFor="let wpn of weapons | async | itemFilter : searchText">
+  <app-weapon class="catalog-item" [data]="wpn" (click)="selectItem('WEAPON', wpn)" (dblclick)="openItem('WEAPON', wpn)" [ngClass]="{'selected': currentItem === wpn}"
+    *ngFor="let wpn of weapons | async | itemFilter : searchText">
   </app-weapon>
 </div>
 
@@ -21,12 +17,8 @@
   <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('MELEE')">Ajouter</button></div>
 </div>
 <div class="melee-weapons">
-  <app-melee-weapon class="catalog-item"
-                 [data]="wpn"
-                 (click)="selectItem('MELEE', wpn)"
-                 (dblclick)="openItem('MELEE', wpn)"
-                 [ngClass]="{'selected': currentItem === wpn}"
-                 *ngFor="let wpn of meleeWeapons | async | itemFilter : searchText">
+  <app-melee-weapon class="catalog-item" [data]="wpn" (click)="selectItem('MELEE', wpn)" (dblclick)="openItem('MELEE', wpn)"
+    [ngClass]="{'selected': currentItem === wpn}" *ngFor="let wpn of meleeWeapons | async | itemFilter : searchText">
   </app-melee-weapon>
 </div>
 
@@ -35,25 +27,28 @@
   <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('EQUIPMENT')">Ajouter</button></div>
 </div>
 <div class="equipments">
-  <app-equipment class="catalog-item"
-                 [data]="eqp"
-                 (click)="selectItem('EQUIPMENT', eqp)"
-                 (dblclick)="openItem('EQUIPMENT', eqp)"
-                 [ngClass]="{'selected': currentItem === eqp}"
-                 *ngFor="let eqp of equipments | async | itemFilter : searchText">
+  <app-equipment class="catalog-item" [data]="eqp" (click)="selectItem('EQUIPMENT', eqp)" (dblclick)="openItem('EQUIPMENT', eqp)"
+    [ngClass]="{'selected': currentItem === eqp}" *ngFor="let eqp of equipments | async | itemFilter : searchText">
   </app-equipment>
 </div>
 
 <div class="heading">
-    <h1>Artéfacts</h1>
-    <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('ARTIFACT')">Ajouter</button></div>
-  </div>
-  <div class="artifacts">
-    <app-artifact class="catalog-item"
-                   [data]="artifact"
-                   (click)="selectItem('ARTIFACT', artifact)"
-                   (dblclick)="openItem('ARTIFACT', artifact)"
-                   [ngClass]="{'selected': currentItem === artifact}"
-                   *ngFor="let artifact of artifacts | async | itemFilter : searchText">
-    </app-artifact>
-  </div>
+  <h1>Artéfacts</h1>
+  <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('ARTIFACT')">Ajouter</button></div>
+</div>
+<div class="artifacts">
+  <app-artifact class="catalog-item" [data]="artifact" (click)="selectItem('ARTIFACT', artifact)" (dblclick)="openItem('ARTIFACT', artifact)"
+    [ngClass]="{'selected': currentItem === artifact}" *ngFor="let artifact of artifacts | async | itemFilter : searchText">
+  </app-artifact>
+</div>
+
+
+<div class="heading">
+  <h1>Divers</h1>
+  <div style="margin-left: 20px;"><button class="btn-success fa fa-plus-circle" (click)="createItem('MISC')">Ajouter</button></div>
+</div>
+<div class="misc">
+  <app-misc class="catalog-item" [data]="misc" (click)="selectItem('MISC', misc)" (dblclick)="openItem('MISC', misc)" [ngClass]="{'selected': currentItem === misc}"
+    *ngFor="let misc of miscs | async | itemFilter : searchText">
+  </app-misc>
+</div>

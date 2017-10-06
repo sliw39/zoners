@@ -14,12 +14,15 @@ import { MeleeWeaponService } from '../../assets/melee-weapon/melee-weapon.servi
 import { ArtifactFormComponent } from '../../assets/artifact/artifact-form.component';
 import { ArtifactService } from '../../assets/artifact/artifact.service';
 import { Artifact } from '../../assets/artifact/artifact.model';
+import { Misc } from '../../assets/misc/misc.model';
+import { MiscService } from '../../assets/misc/misc.service';
+import { MiscFormComponent } from '../../assets/misc/misc-form.component';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css'],
-  providers: [ EquipmentService, WeaponService, MeleeWeaponService, ArtifactService ]
+  providers: [ EquipmentService, WeaponService, MeleeWeaponService, ArtifactService, MiscService ]
 })
 export class CatalogComponent implements OnInit {
 
@@ -27,6 +30,7 @@ export class CatalogComponent implements OnInit {
   equipments: Observable<Equipment[]>;
   meleeWeapons: Observable<MeleeWeapon[]>;
   artifacts: Observable<Artifact[]>;
+  miscs: Observable<Misc[]>;
 
   currentItemType: ItemType;
   currentItem: Item;
@@ -41,7 +45,8 @@ export class CatalogComponent implements OnInit {
     private weaponService: WeaponService,
     private meleeWeaponService: MeleeWeaponService,
     private artifactService: ArtifactService,
-    private fullscreenService: FullscreenService
+    private fullscreenService: FullscreenService,
+    private miscService: MiscService
   ) { }
 
   ngOnInit() {
@@ -49,6 +54,7 @@ export class CatalogComponent implements OnInit {
     this.equipments = this.equipmentService.list();
     this.meleeWeapons = this.meleeWeaponService.list();
     this.artifacts = this.artifactService.list();
+    this.miscs = this.miscService.list();
   }
 
   createItem(itemType: ItemType) {
@@ -61,6 +67,8 @@ export class CatalogComponent implements OnInit {
       this.currentItem = this.meleeWeaponService.createWeapon();
     } else if(itemType === "ARTIFACT") {
       this.currentItem = this.artifactService.createArtifact();
+    } else if(itemType === "MISC") {
+      this.currentItem = this.miscService.createMisc();
     }
 
     this.selectedItemChange.emit({
@@ -94,6 +102,9 @@ export class CatalogComponent implements OnInit {
         break;
       case "ARTIFACT":
         this.fullscreenService.show(ArtifactFormComponent, item);
+        break;
+      case "MISC":
+        this.fullscreenService.show(MiscFormComponent, item);
         break;
     }
   }
