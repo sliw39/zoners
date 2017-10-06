@@ -35,7 +35,7 @@ import { ArtifactFormComponent } from './assets/artifact/artifact-form.component
 import { MiscComponent } from './assets/misc/misc.component';
 import { MiscFormComponent } from './assets/misc/misc-form.component';
 import { DynamicItemComponent } from './assets/dynamic-item/dynamic-item.component';
-import { DynamicItemHookDirective } from './assets/dynamic-item-hook.directive';
+import { DynamicItemHookDirective } from './assets/dynamic-item/dynamic-item-hook.directive';
 
 @NgModule({
   declarations: [
