@@ -4,16 +4,7 @@ import { Weapon } from '../../assets/weapon/weapon.model';
 import { Item, ItemType } from '../../assets/item.model';
 import * as _ from "lodash";
 import { Observable } from 'rxjs/Observable';
-
-interface CartItem {
-  item: Item;
-  count: number;
-  type: ItemType;
-}
-
-function subcriber() {
-
-}
+import { CartItem } from './cart.model';
 
 @Injectable()
 export class CartService {
