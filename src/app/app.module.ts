@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -36,6 +37,7 @@ import { MiscComponent } from './assets/misc/misc.component';
 import { MiscFormComponent } from './assets/misc/misc-form.component';
 import { DynamicItemComponent } from './assets/dynamic-item/dynamic-item.component';
 import { DynamicItemHookDirective } from './assets/dynamic-item/dynamic-item-hook.directive';
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,8 @@ import { DynamicItemHookDirective } from './assets/dynamic-item/dynamic-item-hoo
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [ CartService, ToolsService, FullscreenService ],
   bootstrap: [AppComponent],

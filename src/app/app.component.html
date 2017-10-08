@@ -1,14 +1,18 @@
 <div class="nav-header">
   <div class="title"></div>
+  <div class="routes" *ngIf="(user | async)?.uid">
+    <a routerLink="/catalog" routerLinkActive="active">Catalogue</a>
+  </div>
   <div class="login">
     <button class="btn-success fa fa-user-o" (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
     <button class="btn-danger fa fa-power-off" (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
   </div>
 </div>
 
-<div *ngIf="(user | async)?.uid" class="page-body">
-  <app-catalog (selectedItemChange)="selectItem($event)"></app-catalog>
+<div class="page-body">
+  <router-outlet></router-outlet>
 </div>
 
 
 <app-fullscreen></app-fullscreen>
+
