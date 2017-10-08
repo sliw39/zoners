@@ -5,7 +5,7 @@ import { EquipmentService } from './equipment.service';
 @Component({
   selector: 'app-equipment-form',
   templateUrl: './equipment-form.component.html',
-  styleUrls: ['./equipment-form.component.css'],
+  styleUrls: ['./equipment-form.component.less'],
   providers: [ EquipmentService ]
 })
 export class EquipmentFormComponent implements OnInit {

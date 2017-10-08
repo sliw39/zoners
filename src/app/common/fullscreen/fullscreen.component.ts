@@ -5,7 +5,7 @@ import { FullscreenService } from './fullscreen.service';
 @Component({
   selector: 'app-fullscreen',
   templateUrl: './fullscreen.component.html',
-  styleUrls: ['./fullscreen.component.css']
+  styleUrls: ['./fullscreen.component.less']
 })
 export class FullscreenComponent implements OnInit {
 

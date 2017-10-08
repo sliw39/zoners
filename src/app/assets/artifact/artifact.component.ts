@@ -4,7 +4,7 @@ import { Artifact } from './artifact.model';
 @Component({
   selector: 'app-artifact',
   templateUrl: './artifact.component.html',
-  styleUrls: ['./artifact.component.css']
+  styleUrls: ['./artifact.component.less']
 })
 export class ArtifactComponent implements OnInit {
 

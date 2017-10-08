@@ -6,7 +6,7 @@ import { MiscService } from './misc.service';
 @Component({
   selector: 'app-misc-form',
   templateUrl: './misc-form.component.html',
-  styleUrls: ['./misc-form.component.css'],
+  styleUrls: ['./misc-form.component.less'],
   providers: [ MiscService ]
 })
 export class MiscFormComponent implements OnInit {

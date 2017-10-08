@@ -4,7 +4,7 @@ import { Weapon } from './weapon.model';
 @Component({
   selector: 'app-weapon',
   templateUrl: './weapon.component.html',
-  styleUrls: ['./weapon.component.css']
+  styleUrls: ['./weapon.component.less']
 })
 export class WeaponComponent implements OnInit {
 

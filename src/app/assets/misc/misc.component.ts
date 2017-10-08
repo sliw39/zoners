@@ -4,7 +4,7 @@ import { Misc } from './misc.model';
 @Component({
   selector: 'app-misc',
   templateUrl: './misc.component.html',
-  styleUrls: ['./misc.component.css']
+  styleUrls: ['./misc.component.less']
 })
 export class MiscComponent implements OnInit {
 

@@ -5,7 +5,7 @@ import { MeleeWeaponService } from './melee-weapon.service';
 @Component({
   selector: 'app-melee-weapon-form',
   templateUrl: './melee-weapon-form.component.html',
-  styleUrls: ['./melee-weapon-form.component.css'],
+  styleUrls: ['./melee-weapon-form.component.less'],
   providers: [ MeleeWeaponService ]
 })
 export class MeleeWeaponFormComponent implements OnInit {

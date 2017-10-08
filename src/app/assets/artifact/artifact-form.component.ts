@@ -6,7 +6,7 @@ import { ArtifactService } from './artifact.service';
 @Component({
   selector: 'app-artifact-form',
   templateUrl: './artifact-form.component.html',
-  styleUrls: ['./artifact-form.component.css'],
+  styleUrls: ['./artifact-form.component.less'],
   providers: [ ArtifactService ]
 })
 export class ArtifactFormComponent implements OnInit {

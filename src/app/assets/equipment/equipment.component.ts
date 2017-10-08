@@ -4,7 +4,7 @@ import { Equipment } from './equipment.model';
 @Component({
   selector: 'app-equipment',
   templateUrl: './equipment.component.html',
-  styleUrls: ['./equipment.component.css']
+  styleUrls: ['./equipment.component.less']
 })
 export class EquipmentComponent implements OnInit {
 

@@ -5,7 +5,7 @@ import { WeaponService } from './weapon.service';
 @Component({
   selector: 'app-weapon-form',
   templateUrl: './weapon-form.component.html',
-  styleUrls: ['./weapon-form.component.css'],
+  styleUrls: ['./weapon-form.component.less'],
   providers: [ WeaponService ]
 })
 export class WeaponFormComponent implements OnInit {

@@ -10,7 +10,7 @@ import { WeaponComponent } from '../weapon/weapon.component';
 @Component({
   selector: 'app-dynamic-item',
   templateUrl: './dynamic-item.component.html',
-  styleUrls: ['./dynamic-item.component.css'],
+  styleUrls: ['./dynamic-item.component.less'],
   entryComponents: [ EquipmentComponent, WeaponComponent, MeleeWeaponComponent, ArtifactComponent, MiscComponent ]
 })
 export class DynamicItemComponent implements OnInit, OnChanges {

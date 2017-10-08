@@ -21,7 +21,7 @@ import { MiscFormComponent } from '../../assets/misc/misc-form.component';
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.css'],
+  styleUrls: ['./catalog.component.less'],
   providers: [ EquipmentService, WeaponService, MeleeWeaponService, ArtifactService, MiscService ]
 })
 export class CatalogComponent implements OnInit {

@@ -5,7 +5,7 @@ import { CartService } from '../cart.service';
 @Component({
   selector: 'app-cart-badge',
   templateUrl: './cart-badge.component.html',
-  styleUrls: ['./cart-badge.component.css']
+  styleUrls: ['./cart-badge.component.less']
 })
 export class CartBadgeComponent implements OnInit {
 

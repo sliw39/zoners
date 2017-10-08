@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-dotline',
   templateUrl: './dotline.component.html',
-  styleUrls: ['./dotline.component.css']
+  styleUrls: ['./dotline.component.less']
 })
 export class DotlineComponent implements OnInit {
 
