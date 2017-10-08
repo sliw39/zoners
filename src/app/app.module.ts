@@ -38,6 +38,8 @@ import { MiscFormComponent } from './assets/misc/misc-form.component';
 import { DynamicItemComponent } from './assets/dynamic-item/dynamic-item.component';
 import { DynamicItemHookDirective } from './assets/dynamic-item/dynamic-item-hook.directive';
 import { ROUTES } from './app.routes';
+import { DashboardComponent } from './page/dashboard/dashboard.component';
+import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcut.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { ROUTES } from './app.routes';
     MiscComponent,
     MiscFormComponent,
     DynamicItemComponent,
-    DynamicItemHookDirective
+    DynamicItemHookDirective,
+    DashboardComponent,
+    CartShortcutComponent
   ],
   imports: [
     BrowserModule,

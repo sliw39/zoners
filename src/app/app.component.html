@@ -1,7 +1,7 @@
 <div class="nav-header">
-  <div class="title"></div>
-  <div class="routes" *ngIf="(user | async)?.uid">
-    <a routerLink="/catalog" routerLinkActive="active">Catalogue</a>
+  <div class="title" routerLink="/dashboard">Zoners</div>
+  <div class="routes">
+    <a *ngIf="(user | async)?.uid" routerLink="/catalog" routerLinkActive="active"><i class="fa fa-book"></i>&nbsp;Catalogue</a>
   </div>
   <div class="login">
     <button class="btn-success fa fa-user-o" (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>

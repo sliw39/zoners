@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    > .dashboard-item {
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #cccccc;
+        box-shadow: 0 0 10px #555;
+        margin: 20px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: #bbbbbb;
+        }
+
+        > span {
+            margin-top: 20px;
+            font-size: 3em;
+            font-family: "stalker2";
+        }
+    }
+}
