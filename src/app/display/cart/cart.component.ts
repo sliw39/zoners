@@ -13,9 +13,6 @@ export class CartComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.cartService.cartChanged.subscribe(cart => {
-
-    });
   }
 
 }
