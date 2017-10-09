@@ -26,6 +26,9 @@ import { EquipmentFormComponent } from './assets/equipment/equipment-form.compon
 import { FsContentDirective } from './common/fullscreen/fs-content.directive';
 import { FullscreenComponent } from './common/fullscreen/fullscreen.component';
 import { FullscreenService } from './common/fullscreen/fullscreen.service';
+import { PrintContentDirective } from './common/print/print-content.directive';
+import { PrintComponent } from './common/print/print.component';
+import { PrintService } from './common/print/print.service';
 import { ClickStopPropagationDirective } from './common/events/click-stop-propagation.directive';
 import { WeaponFormComponent } from './assets/weapon/weapon-form.component';
 import { CartBadgeComponent } from './display/cart/cart-badge/cart-badge.component';
@@ -56,6 +59,8 @@ import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcu
     EquipmentFormComponent,
     FsContentDirective,
     FullscreenComponent,
+    PrintComponent,
+    PrintContentDirective,
     ClickStopPropagationDirective,
     WeaponFormComponent,
     CartBadgeComponent,
@@ -78,14 +83,15 @@ import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcu
     AngularFireAuthModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ CartService, ToolsService, FullscreenService ],
-  bootstrap: [AppComponent],
+  providers: [ CartService, ToolsService, FullscreenService, PrintService ],
+  bootstrap: [ AppComponent ],
   entryComponents: [
     EquipmentFormComponent,
     WeaponFormComponent,
     MeleeWeaponFormComponent,
     ArtifactFormComponent,
-    MiscFormComponent
+    MiscFormComponent,
+    CartComponent
   ]
 })
 export class AppModule { }
