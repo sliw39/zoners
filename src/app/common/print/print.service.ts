@@ -14,7 +14,9 @@ export class PrintService {
 
   print(component: Type<{}>, data?: any) {
     if (this.printComponent) {
-      this.printComponent.print(component, data);
+      return this.printComponent.print(component, data);
+    } else {
+      return Promise.reject(null);
     }
   }
 

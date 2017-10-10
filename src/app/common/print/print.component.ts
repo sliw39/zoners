@@ -28,12 +28,17 @@ export class PrintComponent implements OnInit {
     viewContainerRef.clear();
 
     let componentRef = viewContainerRef.createComponent(componentFactory);
-    (<PrintContentDirective>componentRef.instance).data = data;
+    if(data) {
+      (<PrintContentDirective>componentRef.instance).data = data;
+    }
 
     (this.elRef.nativeElement as HTMLElement).style.display = "block";
 
-    setTimeout(() => {
-      window.print();
-    }, 0);
+    return new Promise<never>((resolve, reject) => {
+      setTimeout(() => {
+        window.print();
+        resolve();
+      }, 0);
+    });
   }
 }

@@ -1,7 +1,2 @@
-<table>
-  <tr *ngFor="let item of items">
-    <td>{{item.data.name}}</td>
-    <td><input type="number" [(ngModel)]="item.quantity"></td>
-    <td>{{computePrice(item)}}</td>
-  </tr>
-</table>
+  <app-dynamic-item *ngFor="let it of items" [data]="it.item" [itemType]="it.type">
+  </app-dynamic-item>

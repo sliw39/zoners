@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { CartItem } from '../cart.model';
+import { PrintService } from '../../../common/print/print.service';
+import { CartComponent } from '../cart.component';
 
 @Component({
   selector: 'app-cart-shortcut',
@@ -11,7 +13,7 @@ export class CartShortcutComponent implements OnInit {
 
   counter: number;
 
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, private printService: PrintService) {
   }
 
   ngOnInit() {
@@ -22,6 +24,10 @@ export class CartShortcutComponent implements OnInit {
       }
       this.counter = count;
     });
+  }
+
+  printCart() {
+    this.printService.print(CartComponent).then(() => this.cartService.clear());
   }
 
 }
