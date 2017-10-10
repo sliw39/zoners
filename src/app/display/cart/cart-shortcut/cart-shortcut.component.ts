@@ -27,7 +27,11 @@ export class CartShortcutComponent implements OnInit {
   }
 
   printCart() {
+<<<<<<< HEAD
     this.printService.print(CartComponent).then(() => this.cartService.clear());
+=======
+    this.printService.print(CartComponent);
+>>>>>>> 8d4d53d377cd05b120d8c69a9aa39cee19dc929e
   }
 
 }
