@@ -5,10 +5,11 @@ import { Item, ItemType } from '../../assets/item.model';
 import * as _ from "lodash";
 import { Observable } from 'rxjs/Observable';
 import { CartItem } from './cart.model';
+import { PrintService } from '../../common/print/print.service';
 
 @Injectable()
 export class CartService {
-  constructor() { }
+  constructor(private printService: PrintService) { }
 
   private cart: CartItem[] = []
   public cartChanged = new EventEmitter<CartItem[]>();
@@ -39,4 +40,9 @@ export class CartService {
     }
     this.cartChanged.emit(this.cart);
   }
+
+  getCart() {
+    return this.cart;
+  }
+
 }

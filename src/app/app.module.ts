@@ -16,7 +16,6 @@ import { DiceComponent } from './common/dice/dice.component';
 import { RangePipe } from './common/range.pipe';
 import { DotlineComponent } from './common/dotline/dotline.component';
 import { EquipmentComponent } from './assets/equipment/equipment.component';
-import { PrintablePageComponent } from './display/printable-page/printable-page.component';
 import { CartComponent } from './display/cart/cart.component';
 import { CatalogComponent } from './page/catalog/catalog.component';
 import { ItemFilterPipe } from './common/item-filter.pipe';
@@ -52,7 +51,6 @@ import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcu
     RangePipe,
     DotlineComponent,
     EquipmentComponent,
-    PrintablePageComponent,
     CartComponent,
     CatalogComponent,
     ItemFilterPipe,

@@ -11,6 +11,14 @@
     position: relative;
     padding: 1mm;
 }
+
+@media print {
+    :host {
+        page-break-inside: avoid;
+    }
+}
+
+
 :host > img {
     position: absolute;
     left: 0;

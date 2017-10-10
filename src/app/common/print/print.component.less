@@ -1,18 +1,17 @@
 @media print {
-    :host {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    
-        background-color: rgba(0, 0, 0, .5);
+    .holder {
+        display: block !important;
+        background-color: white;
     
         z-index: 2000;
     }
 }
 
-:host {
+.holder {
     display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
