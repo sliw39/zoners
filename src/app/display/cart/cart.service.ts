@@ -45,12 +45,9 @@ export class CartService {
     return this.cart;
   }
 
-<<<<<<< HEAD
   clear() {
     this.cart = [];
     this.cartChanged.emit(this.cart);
   }
 
-=======
->>>>>>> 8d4d53d377cd05b120d8c69a9aa39cee19dc929e
 }
