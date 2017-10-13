@@ -42,6 +42,8 @@ import { DynamicItemHookDirective } from './assets/dynamic-item/dynamic-item-hoo
 import { ROUTES } from './app.routes';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcut.component';
+import { CharacterSheetComponent } from './characters/character-sheet/character-sheet.component';
+import { ItemStackComponent } from './common/item-stack/item-stack.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +73,9 @@ import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcu
     DynamicItemComponent,
     DynamicItemHookDirective,
     DashboardComponent,
-    CartShortcutComponent
+    CartShortcutComponent,
+    CharacterSheetComponent,
+    ItemStackComponent
   ],
   imports: [
     BrowserModule,
