@@ -9,6 +9,9 @@ export interface Item {
 
     weight: number;
     price: number;
+
+    owner?: string;
+    status?: "DRAFT"|"ACTIVE";
 }
 
 export interface DynamicItemStat {
