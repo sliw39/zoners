@@ -4,7 +4,7 @@ import { Weapon } from './weapon.model';
 @Component({
   selector: 'app-weapon',
   templateUrl: './weapon.component.html',
-  styleUrls: ['./weapon.component.css']
+  styleUrls: ['./weapon.component.less']
 })
 export class WeaponComponent implements OnInit {
 
@@ -14,6 +14,10 @@ export class WeaponComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getImageUrl() {
+    return `assets/images/weapons/${this.data.name}.png`;
   }
 
 }

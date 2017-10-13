@@ -1,4 +1,4 @@
 export interface RollValue {
     dice: number;
-    bonus: number;
+    bonus?: number;
 }

@@ -1,0 +1,61 @@
+:host {
+    height: 100%;
+}
+
+.nav-header {
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+
+    .title {
+        margin-left: 20px;
+        margin-right: 40px;
+        color: white;
+        font-family: "stalker2";
+        font-size: larger;
+
+        cursor: pointer;
+    }
+
+    .routes {
+        height: 100%;
+        line-height: 3.2em;
+        flex: 1;
+        display: flex;
+
+        > a {
+            color: white;
+            height: 100%;
+            display: block;
+            padding: 0 20px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-family: "stalker1";
+            margin-right: 1px;
+            text-decoration: unset;
+            cursor: pointer;
+            
+            &.active {
+                background-color: #FFF;
+                color: black;
+            }
+        }
+    }
+}
+
+
+.login {
+    margin: 10px;
+}
+
+.page-body {
+    position: absolute;
+    overflow-y: auto;
+    margin-top: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}

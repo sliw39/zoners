@@ -1,5 +1,19 @@
-<div>
-  <button (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
-  <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+<div class="nav-header">
+  <div class="title" routerLink="/dashboard">Zoners</div>
+  <div class="routes">
+    <a *ngIf="(user | async)?.uid" routerLink="/catalog" routerLinkActive="active"><i class="fa fa-book"></i>&nbsp;Catalogue</a>
+  </div>
+  <div class="login">
+    <button class="btn-success fa fa-user-o" (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>
+    <button class="btn-danger fa fa-power-off" (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+  </div>
 </div>
-<div></div>
+
+<div class="page-body">
+  <router-outlet></router-outlet>
+</div>
+
+
+<app-fullscreen></app-fullscreen>
+<app-print></app-print> 
+

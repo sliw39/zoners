@@ -1,0 +1,77 @@
+<div class="body">
+  <div class="form">
+    <div class="line">
+      <div class="label">Nom :</div>
+      <div class="value"><input type="text" [(ngModel)]="data.name"></div>
+    </div>
+    <div class="line">
+      <div class="label">Détail :</div>
+      <div class="value"><textarea [(ngModel)]="data.detail"></textarea></div>
+    </div>
+
+    <div class="line">
+      <div class="label">Munitions :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.ammo"></div>
+    </div>
+
+    <div class="line">
+      <div class="label">0-10m :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.accuracy.veryshort.dice">D+<input type="number" [(ngModel)]="data.accuracy.veryshort.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">10-20m :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.accuracy.short.dice">D+<input type="number" [(ngModel)]="data.accuracy.short.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">20-40m :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.accuracy.medium.dice">D+<input type="number" [(ngModel)]="data.accuracy.medium.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">40-70m :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.accuracy.long.dice">D+<input type="number" [(ngModel)]="data.accuracy.long.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">70+m :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.accuracy.verylong.dice">D+<input type="number" [(ngModel)]="data.accuracy.verylong.bonus"></div>
+    </div>
+
+
+    <div class="line">
+      <div class="label">Puissance :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.power.dice">D+<input type="number" [(ngModel)]="data.power.bonus"></div>
+    </div>
+    <div class="line">
+      <div class="label">Maniabilité :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.handling"></div>
+    </div>
+    <div class="line">
+      <div class="label">Poids :</div>
+      <div class="value"><input type="number" [(ngModel)]="data.weight"></div>
+    </div>
+    <div class="line">
+      <div class="label">Calibre :</div>
+      <div class="value">
+        <select [(ngModel)]="data.ammotype">
+        <option value="spe.">Special</option>
+        <option value="9mm">Pistolet 9mm</option>
+        <option value=".12">Cartouches .12</option>
+        <option value="5.45">5.45 Russe</option>
+        <option value=".50mm">Revolver .50</option>
+        <option value="7.62">Karabin 7.62</option>
+        <option value="5.56">5.56 OTAN</option>
+        <option value="12.7">Cal.50 12.7mm</option>        
+      </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview">
+    <app-weapon [data]="data"></app-weapon>
+  </div>
+</div>
+
+<div class="actions">
+  <button class="btn-success fa fa-plus-circle" *ngIf="!data.id" (click)="save()">Ajouter</button>
+  <button class="btn-success fa fa-save" *ngIf="data.id" (click)="save()">Mettre à jour</button>
+  <button class="btn-danger fa fa-trash-o" *ngIf="data.id" (click)="delete()">Supprimer</button>
+</div>

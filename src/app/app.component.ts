@@ -4,16 +4,22 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
 import * as firebase from 'firebase/app';
+import { Weapon } from './assets/weapon/weapon.model';
+import { Equipment } from './assets/equipment/equipment.model';
+import { Item, ItemType } from './assets/item.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
 export class AppComponent {
   title = 'app';
   user: Observable<firebase.User>;
   msgVal: string = '';
+
+  currentItemType: ItemType;
+  currentItem: Item;
 
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
     this.user = this.afAuth.authState;
@@ -25,5 +31,10 @@ export class AppComponent {
 
   logout() {
     this.afAuth.auth.signOut();
+  }
+
+  selectItem(itemDesc: { itemType: ItemType; item: Item; }) {
+    this.currentItem = itemDesc.item;
+    this.currentItemType = itemDesc.itemType;
   }
 }

@@ -4,7 +4,7 @@ import { RollValue } from './dice.model';
 @Component({
   selector: 'app-dice',
   templateUrl: './dice.component.html',
-  styleUrls: ['./dice.component.css']
+  styleUrls: ['./dice.component.less']
 })
 export class DiceComponent implements OnInit {
 

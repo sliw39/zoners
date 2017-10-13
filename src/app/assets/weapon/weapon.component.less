@@ -1,0 +1,86 @@
+:host {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 52mm;
+    width: 52mm;
+    border: 1px solid black;
+
+    font-family: "stalker2";
+    font-size: 12px;
+
+    position: relative;
+    padding: 1mm;
+}
+:host > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+@media print {
+    :host {
+        page-break-inside: avoid;
+    }
+}
+
+.title {
+    font-family: "stalker1";
+    font-size: 20px;
+    margin-bottom: 8mm;
+}
+
+.ammo {
+    margin-bottom: 2mm;
+}
+
+.accuracy {
+    margin-bottom: 6mm;
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.label {
+    width: 40%;
+}
+
+.stats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 1mm;
+    padding-right: 1mm;
+}
+.stat {
+    width: 12mm;
+    line-height: 12px;
+}
+.stat > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stat-head {
+    background-color: #e4c2c2;
+    border-top-left-radius: 5px;
+    height: 4.5mm;
+    margin-bottom: 2px;
+}
+.stat-body {
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ddd;
+    height: 4.5mm;
+}
+
+
+app-cart-badge {
+    display: none;
+}
+
+:host:hover app-cart-badge, :host.selected app-cart-badge {
+    display: block;   
+}
