@@ -6,7 +6,7 @@ const DECAY = 5;
 @Component({
   selector: 'app-item-stack',
   templateUrl: './item-stack.component.html',
-  styleUrls: ['./item-stack.component.css']
+  styleUrls: ['./item-stack.component.less']
 })
 export class ItemStackComponent implements OnInit, OnChanges {
   
