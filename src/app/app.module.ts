@@ -47,6 +47,7 @@ import { ItemStackComponent } from './common/item-stack/item-stack.component';
 import { CharacterFigureComponent } from './characters/character-figure/character-figure.component';
 import { CharacterWoundComponent } from './characters/character-wound/character-wound.component';
 import { CharacterListComponent } from './characters/character-list/character-list.component';
+import { CharacterFilterPipe } from './characters/character-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { CharacterListComponent } from './characters/character-list/character-li
     ItemStackComponent,
     CharacterFigureComponent,
     CharacterWoundComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    CharacterFilterPipe
   ],
   imports: [
     BrowserModule,

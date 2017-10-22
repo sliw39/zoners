@@ -1,0 +1,19 @@
+<div class="filter">
+    <input type="text" [(ngModel)]="searchText" placeholder="Rechercher...">
+    <button class="btn-success fa fa-plus-circle" (click)="createCharacter()">Ajouter</button>
+</div>
+<div class="characters">
+    <div class="character-list-item" 
+        *ngFor="let character of characters|characterFilter:searchText">
+        <div class="chr-photo">
+            <i class="fa fa-user" *ngIf="!character.picture"></i>
+            <img *ngIf="character.picture" [src]="charater.picture">
+        </div>
+        <div>
+            <h1>{{character.name}}</h1>
+            <div>
+                <div><span>Lieu : </span><span>INCONNU</span></div>
+            </div>
+        </div>
+    </div>
+</div>
