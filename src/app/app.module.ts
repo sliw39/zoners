@@ -44,6 +44,9 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { CartShortcutComponent } from './display/cart/cart-shortcut/cart-shortcut.component';
 import { CharacterSheetComponent } from './characters/character-sheet/character-sheet.component';
 import { ItemStackComponent } from './common/item-stack/item-stack.component';
+import { CharacterFigureComponent } from './characters/character-figure/character-figure.component';
+import { CharacterWoundComponent } from './characters/character-wound/character-wound.component';
+import { CharacterListComponent } from './characters/character-list/character-list.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +78,10 @@ import { ItemStackComponent } from './common/item-stack/item-stack.component';
     DashboardComponent,
     CartShortcutComponent,
     CharacterSheetComponent,
-    ItemStackComponent
+    ItemStackComponent,
+    CharacterFigureComponent,
+    CharacterWoundComponent,
+    CharacterListComponent
   ],
   imports: [
     BrowserModule,

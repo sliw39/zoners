@@ -10,6 +10,7 @@ export interface Character {
 
     skills: Skill[];
     behavior: string[];
+    wounds: Wound;
 
     money: number;
 
@@ -27,4 +28,14 @@ export interface Character {
 export interface Skill {
     name: string;
     value: number;
+}
+
+export interface Wound {
+    intensity: "GREEN"|"ORANGE"|"RED"|"BLACK";
+    cured: boolean;
+    location: {
+        x: number;
+        y: number;
+    }
+    description: string;
 }

@@ -1,5 +1,5 @@
 :host {
-    background-image: url("assets/images/character/bgstalker.png");
+    background-image: url("/assets/images/character/bgstalker.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0;
@@ -13,22 +13,71 @@
     width: 210mm;
 }
 
-.h1, .h2, .h3 {
+h1, h2, h3 {
     font-weight: bold;
     color: black;
 }
-.h1 {
+h1 {
     clear: both;
     display: block;
     font-size: large;
 }
-.h2 {
+h2 {
     clear: both;
     display: block;
     font-size: large;
     font-style: italic;
     margin-bottom: 0.5cm;
     margin-top: 0.5cm;
+}
+
+.wallet-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    > .wallet {
+        flex: 1;
+
+        background-color: rgba(200,200,200,0.5);
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+        margin: 0.25cm;
+        padding: 0.15cm;
+        width: 6.2cm;
+        height: 8cm;
+
+        display: flex;
+        flex-direction: column;
+
+        > .wallet-top-container {
+            display: flex;
+            flex-direction: row;
+
+            > .picture-container {
+
+            }
+
+            > .info-container {
+
+            }
+
+            .picture {
+                background-color: white;
+                width: 2.5cm;
+                height: 3.25cm;
+                margin-right: 0.1cm;
+                margin-bottom: 0.1cm;
+            }
+            
+        }
+        > .wallet-bottom-container {
+            .flag {
+                width: 2.4cm;
+                height: 1.35cm;
+                background-color: white;
+            }
+        }
+    }
 }
 
 .picture {
@@ -62,16 +111,16 @@
 }
 
 .radiation {
-    background-image: url("assets/images/character/rad.png");
+    background-image: url("/assets/images/character/rad.png");
 }
 .endurance {
-    background-image: url("assets/images/character/end.png");
+    background-image: url("/assets/images/character/end.png");
 }
 .madness {
-    background-image: url("assets/images/character/mood.png");
+    background-image: url("/assets/images/character/mood.png");
 }
 .sickness {
-    background-image: url("assets/images/character/bio.png");
+    background-image: url("/assets/images/character/bio.png");
 }
 
 .s-label {

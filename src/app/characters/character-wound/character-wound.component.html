@@ -1,0 +1,5 @@
+<i class="fa fa-2x" 
+    [ngClass]="wound.cured ? 'fa-times' : 'fa-exclamation-triangle'"
+    [style.color]="wound.intensity?.toLowerCase()"
+    [title]="wound.description || ''"
+    (click)="$event.stopPropagation()"></i>

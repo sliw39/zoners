@@ -2,6 +2,7 @@
   <div class="title" routerLink="/dashboard">Zoners</div>
   <div class="routes">
     <a *ngIf="(user | async)?.uid" routerLink="/catalog" routerLinkActive="active"><i class="fa fa-book"></i>&nbsp;Catalogue</a>
+    <a *ngIf="(user | async)?.uid" routerLink="/characters" routerLinkActive="active"><i class="fa fa-user"></i>&nbsp;Personnages</a>
   </div>
   <div class="login">
     <button class="btn-success fa fa-user-o" (click)="login()" *ngIf="!(user | async)?.uid">Anonymous Login</button>

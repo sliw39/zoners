@@ -1,0 +1,7 @@
+<div class="container" (click)="addWound($event)">
+  <app-character-wound [data]="wound" 
+                       *ngFor="let wound of wounds"
+                       [style.top]="wound.location.y + 'px'"
+                       [style.left]="wound.location.x + 'px'">
+  </app-character-wound>
+</div>
