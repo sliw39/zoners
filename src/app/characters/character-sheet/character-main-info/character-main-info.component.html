@@ -1,0 +1,15 @@
+<input type="text" [(ngModel)]="data.name" placeholder="Nom">
+<input type="text" [(ngModel)]="data.age" placeholder="Age">
+<input type="text" [(ngModel)]="data.gender" placeholder="Sexe">
+<select [(ngModel)]="data.nationality">
+  <option *ngFor="let nationality of nationalities"></option>
+</select>
+<div class="picture">
+
+</div>
+
+<textarea [(ngModel)]="data.background"></textarea>
+
+<div>
+  <button (click)="close()">Valider</button>
+</div>

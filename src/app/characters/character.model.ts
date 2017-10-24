@@ -1,6 +1,8 @@
 import { Artifact } from "../assets/artifact/artifact.model";
 
 export interface Character {
+    id: string;
+
     name: string;
     age: string;
     gender: string;

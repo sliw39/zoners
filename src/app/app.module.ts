@@ -48,6 +48,7 @@ import { CharacterFigureComponent } from './characters/character-figure/characte
 import { CharacterWoundComponent } from './characters/character-wound/character-wound.component';
 import { CharacterListComponent } from './characters/character-list/character-list.component';
 import { CharacterFilterPipe } from './characters/character-filter.pipe';
+import { CharacterMainInfoComponent } from './characters/character-sheet/character-main-info/character-main-info.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { CharacterFilterPipe } from './characters/character-filter.pipe';
     CharacterFigureComponent,
     CharacterWoundComponent,
     CharacterListComponent,
-    CharacterFilterPipe
+    CharacterFilterPipe,
+    CharacterMainInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -101,7 +103,9 @@ import { CharacterFilterPipe } from './characters/character-filter.pipe';
     MeleeWeaponFormComponent,
     ArtifactFormComponent,
     MiscFormComponent,
-    CartComponent
+    CartComponent,
+    
+    CharacterMainInfoComponent
   ]
 })
 export class AppModule { }

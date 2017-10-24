@@ -1,20 +1,20 @@
 <div class="wallet-container">
-  <div class="wallet">
+  <div class="wallet" ngClick="fillMainInfo()">
     <div class="wallet-top-container">
       <div class="picture-container">
-          <div class="picture"></div>
+          <div class="picture"><img [src]="character.picture"></div>
           <div><h3>Origines : </h3></div>
       </div>
       <div class="info-container">
-          <div><h3>Nom : </h3><span></span></div>
-          <div><h3>Sexe : </h3><span></span></div>
-          <div><h3>Age : </h3><span></span></div>
-          <div><h3>Nationalité : </h3><span></span></div>
-          <div><div class="flag"></div></div>
+          <div><h3>Nom : </h3><p>{{character.name}}</p></div>
+          <div><h3>Sexe : </h3><span>{{character.gender}}</span></div>
+          <div><h3>Age : </h3><span>{{character.age}}</span></div>
+          <div><h3>Nationalité : </h3></div>
+          <div><div class="flag"><img [src]="character.nationality"></div></div>
       </div>
     </div>
     <div class="wallet-bottom-container">
-      
+      {{character.background}}
     </div>
   </div>
 

@@ -6,7 +6,8 @@ import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-character-list',
   templateUrl: './character-list.component.html',
-  styleUrls: ['./character-list.component.less']
+  styleUrls: ['./character-list.component.less'],
+  providers: [ CharacterService ]
 })
 export class CharacterListComponent implements OnInit {
 
