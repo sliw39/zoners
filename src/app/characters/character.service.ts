@@ -30,4 +30,47 @@ export class CharacterService {
     character.id = undefined;
   }
 
+  createCharacter() {
+    return {
+      id: null,
+      name: "",
+      age: "20",
+      artifacts: [],
+      background: "",
+      behavior: [],
+      contamination: {
+        tier0: 0,
+        tier1: 0,
+        tier2: 0,
+        tier3: 0 
+      },
+      madness: {
+        tier0: 0,
+        tier1: 0,
+        tier2: 0,
+        tier3: 0 
+      },
+      illness: {
+        tier0: 0,
+        tier1: 0,
+        tier2: 0,
+        tier3: 0 
+      },
+      endurance: {
+        tier0: 0,
+        tier1: 0,
+        tier2: 0,
+        tier3: 0 
+      },
+      equipments: [],
+      gender: "",
+      money: 0,
+      nationality: null,
+      picture: null,
+      skills: [],
+      weapons: [],
+      wounds: []
+    } as Character;
+  }
+
 }

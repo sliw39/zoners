@@ -13,14 +13,14 @@ export interface Character {
 
     skills: Skill[];
     behavior: string[];
-    wounds: Wound;
+    wounds: Wound[];
 
     money: number;
 
-    endurance: number;
-    illness: number;
-    madness: number;
-    contamination: number;
+    endurance: Status;
+    illness: Status;
+    madness: Status;
+    contamination: Status;
 
     artifacts: string[];
     weapons: string[];
@@ -41,4 +41,11 @@ export interface Wound {
         y: number;
     }
     description: string;
+}
+
+export interface Status {
+    tier0: number;
+    tier1: number;
+    tier2: number;
+    tier3: number;
 }
