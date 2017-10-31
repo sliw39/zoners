@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Character } from '../../character.model';
 import { FullscreenService } from '../../../common/fullscreen/fullscreen.service';
 import { Observable } from 'rxjs/Observable';
+import { Nationality } from '../../nationality.service';
 
 @Component({
   selector: 'app-character-main-info',

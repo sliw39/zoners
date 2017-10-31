@@ -13,8 +13,11 @@ export class CharacterListComponent implements OnInit {
 
   characters: Observable<Character[]>;
 
+  chartest: Character;
+
   constructor(private characterService: CharacterService) { 
     this.characters = this.characterService.list();
+    this.chartest = this.characterService.createCharacter();
   }
 
   ngOnInit() { }
