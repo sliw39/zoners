@@ -12,8 +12,11 @@ import { MiscService } from './misc.service';
 export class MiscFormComponent implements OnInit {
 
   @Input() data: Misc;
+  categories: string[] = [];
 
-  constructor(private miscService: MiscService) { }
+  constructor(private miscService: MiscService) {
+    this.miscService.getCategories().then(cats => this.categories = cats);
+  }
 
   ngOnInit() {
   }

@@ -42,4 +42,14 @@ export class MiscService {
     } as Misc;
   }
 
+  getCategories() {
+    return Promise.resolve([
+      "alimentaire",
+      "médical",
+      "munition",
+      "amélioration",
+      "divers"
+    ])
+  }
+
 }
