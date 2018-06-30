@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		body {
+		    background-image: url("bgstalker.png");
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		    margin: 0;
+		    font-family: "STALKER2";
+		    color: #666;
+		    font-size-adjust: 0.35;
+		}
+		.h1, .h2, .h3 {
+			font-weight: bold;
+			color: black;
+		}
+		.h1 {
+		    clear: both;
+		    display: block;
+		    font-size: large;
+		}
+		.h2 {
+			clear: both;
+		    display: block;
+		    font-size: large;
+		    font-style: italic;
+		    margin-bottom: 0.5cm;
+		    margin-top: 0.5cm;
+		}
+		.h3 {
+
+		}
+		.picture {
+			background-color: white;
+			width: 2.5cm;
+			height: 3.25cm;
+			margin-right: 0.1cm;
+			margin-bottom: 0.1cm;
+			float: left;
+		}
+		.wallet, .lpanel, .rpanel, .bag, .medicine, .food, .tools, .other, .health, .artifacts, .weapon, .equipment, .silhouette, .radiation, .endurance, .madness, .sickness, .s-holder, .s-label {
+			position: relative;
+		    float: left;
+		}
+		.wallet, .bag, .weapon, .equipment, .health, .artifacts {
+			background-color: rgba(200,200,200,0.5);
+		    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+		    margin: 0.25cm;
+		    padding: 0.15cm;
+		}
+		.radiation, .endurance, .madness, .sickness {
+			width: 33%;
+			height: 50%;
+			background-size: 2.5cm;
+		    background-repeat: no-repeat;
+		}
+		.s-holder {
+			width: 40%;
+		    height: 14px;
+		    font-size: larger;
+		}
+
+		.radiation {
+			background-image: url("rad.png");
+		}
+		.endurance {
+			background-image: url("end.png");
+		}
+		.madness {
+			background-image: url("mood.png");
+		}
+		.sickness {
+			background-image: url("bio.png");
+		}
+
+		.s-label {
+		    width: 60%;
+		    color: black;
+		    font-size: small;
+		    font-weight: bold;
+		    height: 14px;
+		}
+		.s-label span {
+			vertical-align: sub;	
+		}
+		.s-line {
+			width: 100%;
+			margin-left: 0.3cm;
+			color: black;
+		}
+		.wallet {
+		    width: 6.2cm;
+		    height: 8cm;
+		}
+		.money {
+			border: 1px solid;
+			width: 4cm;
+			height: 1cm;
+		}
+		.lpanel {
+			height: 21cm;
+			width: 15cm;
+		}
+		.rpanel {
+			height: 21cm;
+			width: 5cm;
+		}
+		.medicine, .food, .tools, .other {
+			width: 50%;
+		    text-align: center;
+		    margin-bottom: 0.4cm;
+		    margin-top: 0.1cm;
+		}
+		.bag, .health {
+			height: 8cm;
+    		width: 14.3cm;
+		}
+		.artifacts, .weapon, .equipment {
+			font-family: "STALKER1";
+			font-size: x-large;
+			text-align: center;
+		}
+		.artifacts {
+			height: 2.5cm;
+    		width: 2.5cm;
+    		margin-right: 0.70cm;
+    		line-height: 4;
+		}
+		.weapon {
+			width: 5.2cm;
+    		height: 5cm;
+    		line-height: 8;
+		}
+		.equipment {
+			width: 5.2cm;
+    		height: 2.98cm;
+    		line-height: 5;
+		}
+		.silhouette, .silhouette img {
+			height: 100%;
+		}
+		.clip {
+			width: 2.7cm;
+		    position: absolute;
+		    right: -11px;
+		    top: -17px;
+		}
+		.flag {
+			position: absolute;
+			top: 2.6cm;
+			left: 3.4cm;
+			width: 2.4cm;
+			height: 1.35cm;
+			background-color: white;
+		}
+	</style>
+</head>
+<body style="height:29.7cm; width:21cm;">
+	<div class="wallet">
+		<div class="picture"></div>
+		<span class="h3">Nom : </span>_________<br>_______________
+		<br>
+		<span class="h3">Sexe : </span>________
+		<br>
+		<span class="h3">Age : </span>_________
+		<br>
+		<span class="h3">Nationalité : </span><br><br><br><br>
+		<div class="flag"></div>
+		<span class="h3">Origines : </span>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+	</div>
+	<div class="wallet">
+		<span class="h3">Traits : </span><br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		___________________________<br>
+		<br>
+
+		<span class="h3">Isolation :</span>
+		<span>○○○○○○ + ___</span><br>
+		<br>
+
+		<span class="h3" style="display:inline-block;vertical-align:top;">Poids :</span>
+		<span style="display:inline-block;">○○○○○○○○○○○○<br>○○○○○○○○○○○○</span><br>
+		<br>
+
+		<span class="h3" style="display:inline-block;vertical-align:top;">Argent :</span>
+		<span class="money" style="display:inline-block;"></span><br>
+		<br>
+	</div>
+	<div class="wallet">
+		<span class="h1">Atouts/Défauts</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+		<span>______________________ ○○○</span>
+	</div>
+	<div class="lpanel">
+		<div class="bag">
+			<div class="medicine">
+				<span class="h1 fa fa-medkit">&nbsp;Médecine</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+			</div>
+			<div class="food">
+				<span class="h1 fa fa-cutlery">&nbsp;Nourriture</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+			</div>
+			<div class="tools">
+				<span class="h1 fa fa-wrench">&nbsp;Outils</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+			</div>
+			<div class="other">
+				<span class="h1 fa fa-cogs">&nbsp;Divers</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+				<span>____________________________</span>
+			</div>
+		</div>
+		<div class="health">
+			<div class="silhouette"><img src="silhouette.png" alt=""></div>
+			<div class="radiation">
+				<span class="h2">Radiations</span>
+				<div class="s-line">
+					<div class="s-label"><span>Convulsions</span></div>
+					<div class="s-holder">○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Ulcérations</span></div>
+					<div class="s-holder">○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Perte cheveux</span></div>
+					<div class="s-holder">○○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Nausées</span></div>
+					<div class="s-holder">○○○○</div>
+				</div>
+			</div>
+			<div class="endurance">
+				<span class="h2">Endurance</span>
+				<div class="s-line">
+					<div class="s-label"><span>Inconscient</span></div>
+					<div class="s-holder">○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Epuisé</span></div>
+					<div class="s-holder">○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Essoufflé</span></div>
+					<div class="s-holder">○○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Fatigué</span></div>
+					<div class="s-holder">○○○○</div>
+				</div>
+			</div>
+			<div class="madness">
+				<span class="h2">Moral</span>
+				<div class="s-line">
+					<div class="s-label"><span>Folie</span></div>
+					<div class="s-holder">○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Choqué</span></div>
+					<div class="s-holder">○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Stressé</span></div>
+					<div class="s-holder">○○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Nerveux</span></div>
+					<div class="s-holder">○○○○</div>
+				</div>
+			</div>
+			<div class="sickness">
+				<span class="h2">Maladie</span>
+				<div class="s-line">
+					<div class="s-label"><span>Malaise</span></div>
+					<div class="s-holder">○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Vomissements</span></div>
+					<div class="s-holder">○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Nauséeux</span></div>
+					<div class="s-holder">○○○</div>
+				</div>
+				<div class="s-line">
+					<div class="s-label"><span>Fébrile</span></div>
+					<div class="s-holder">○○○○</div>
+				</div>
+			</div>
+		</div>
+		<div class="artifacts"><span>ARTEFACT</span></div>
+		<div class="artifacts"><span>ARTEFACT</span></div>
+		<div class="artifacts"><span>ARTEFACT</span></div>
+		<div class="artifacts"><span>ARTEFACT</span></div>
+	</div>
+	<div class="rpanel">
+		<div class="weapon"><img src="clip.png" class="clip"><span>ARMES</span></div>
+		<div class="equipment"><img src="clip.png" class="clip"><span>CASQUE</span></div>
+		<div class="equipment"><img src="clip.png" class="clip"><span>VESTE</span></div>
+		<div class="equipment"><img src="clip.png" class="clip"><span>PANTALON</span></div>
+		<div class="equipment"><img src="clip.png" class="clip"><span>GANTS</span></div>
+	</div>
+</body>
+</html>
