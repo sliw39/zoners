@@ -1,0 +1,107 @@
+[
+    {
+        "id": "APPRENTICESHIP",
+        "name": "Apprentissage",
+        "description": "Nécéssite un mentor. Capacité à copier les compétences du mentor. Lorsque le mentor effectue un jet, l'apprenti peut utiliser un point d'apprentissage pour ajouter la compétence du mentor à ses compétence (au niveau 1). Cette nouvelle compétence n'est utilisable qu'une fois et peut être améliorer en réutilisant cet effet dans la limite du niveau de compétence du mentor. Les points d'apprentissage sont réinitialisés chaque jour." 
+    },
+    {
+        "id": "AGILITY",
+        "name": "Agilité",
+        "description": "Permet l'utilisation de dés bonus pour les jets d'escalade, de saut, d'équilibre, etc."
+    },
+    {
+        "id": "DIY",
+        "name": "Bricolage",
+        "description": "Permet la réparation et la création de choses diverses."
+    },
+    {
+        "id": "LEADERSHIP",
+        "name": "Meneur",
+        "description": "Permet l'utilisation de bonus lors des attaques coordonnées."
+    },
+    {
+        "id": "SHARPSIGHT",
+        "name": "Regard vif",
+        "description": "Permet de voir des éléments invisibles à d'autre."
+    },
+    {
+        "id": "WEAPONKNOLEDGE",
+        "name": "Spécialiste en armement",
+        "description": "Permet de voir des éléments invisibles à d'autre.",
+        "options": [
+            {
+                "id": "PISTOL",
+                "name": "Armes de poing"
+            },
+            {
+                "id": "ASSAULT",
+                "name": "Armes d'assaut"
+            },
+            {
+                "id": "EXPLOSIVE",
+                "name": "Explosifs"
+            },
+            {
+                "id": "SNIPER",
+                "name": "Fusils de précision"
+            },
+            {
+                "id": "HEAVYWEAPON",
+                "name": "Armes lourdes"
+            },
+            {
+                "id": "SHOTGUN",
+                "name": "Fusils à pompe"
+            },
+            {
+                "id": "MELEE",
+                "name": "Corps à corps"
+            }
+        ]
+    },
+    {
+        "id": "INTUITION",
+        "name": "6e sens",
+        "description": "Permet de préssentir des évennements. Attention à la paranoïa."
+    },
+    {
+        "id": "DISCRETION",
+        "name": "Discretion",
+        "description": "Permet des déplacements silentieux."
+    },
+    {
+        "id": "PASSEPARTOUT",
+        "name": "Passe partout",
+        "description": "Permet d'atteindre des lieux innaccessibles à d'autre."
+    },
+    {
+        "id": "PLUNDERER",
+        "name": "Pillard",
+        "description": "Possède des compétences de vol à la tire, de crochetage, etc."
+    },
+    {
+        "id": "HEAVY",
+        "name": "Force de la nature",
+        "description": "Possède une force démesurée, inspire la crainte et la peur autour de lui."
+    },
+    {
+        "id": "HANDSOME",
+        "name": "Charismatique",
+        "description": "Possède un charisme donnant des avantages dans une discution."
+    },
+    {
+        "id": "HIDEOUS",
+        "name": "Hideux",
+        "description": "Les gens évitent la discution avec vous."
+    },
+    {
+        "id": "STALKER",
+        "name": "Stalker expérimenté",
+        "description": "Connais les dangers de la zone."
+    },
+    {
+        "id": "TROGLODYTE",
+        "name": "Troglodyte",
+        "description": "Connais les dangers du monde souterrain."
+    }
+]
