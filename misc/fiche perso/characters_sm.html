@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face {
+			font-family: "stalker1";
+			src: url("./stalker1.ttf") format("truetype");
+		}
+		@font-face {
+			font-family: "stalker2";
+			src: url("./stalker2.ttf") format("truetype");
+		}
+        body {
+            margin: 0;
+            font-family: "stalker2";
+            color: #666;
+            font-size-adjust: 0.35;
+            height: 29.7cm;
+            width: 21cm;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        td {
+            padding: 0;
+        }
+        .sheets {
+            height: 50%;
+            width: 50%;
+            background-image: url("bgstalker.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .well {
+            background-color: rgba(200,200,200,0.5);
+		    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
+        }
+        .main {
+            margin: 0.25cm;
+            height: 3.25cm;
+            padding: 0.25cm;
+            display: flex;
+        }
+        .picture {
+			background-color: white;
+			width: 2.5cm;
+			height: 3.25cm;
+			margin-right: 0.1cm;
+			margin-bottom: 0.1cm;
+		}
+        .infos {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .detail {
+            margin: 0.25cm;
+            margin-top: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1;
+        }
+
+        .stats {
+            flex: 1;    
+            height: 100%;
+            padding: 0.25cm;
+            padding-bottom: 0;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .status {
+            margin-left: 0.5cm;
+            flex: 1;
+        }
+        .silhouette {
+            height: 5cm;
+            width: 3cm;
+            background-image: url(silhouette.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .stuff {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .lines {
+            flex: 1;
+            text-align: center;
+        }
+        .item {
+            background-color: rgba(200,200,200,0.5);
+			width: 5.2cm;
+    		height: 5cm;
+    		line-height: 10;
+            font-family: "stalker1";
+			font-size: large;
+			text-align: center;
+            position: relative;
+		}
+        .clip {
+			width: 2.7cm;
+		    position: absolute;
+		    right: -11px;
+		    top: -17px;
+		}
+    </style>
+</head>
+<body>
+    <div class="sheets">
+        <div class="main well">
+            <div class="picture"></div>
+            <div class="infos">
+                <div class="info-line">Nom : ______________________</div>
+                <div class="info-line">Sexe : _____________________</div>
+                <div class="info-line">Nationnalité : _____________</div>
+                <div class="info-line">Traits : ___________________</div>
+                <div class="info-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________</div>
+                <div class="info-line">Lieu : _____________________</div>
+                <div class="info-line">Richesse : _________________</div>
+            </div>
+        </div>
+        <div class="detail well">
+            <div class="stats">
+                <div class="silhouette"></div>
+                <div class="status">
+                    <table>
+                        <tr>
+                            <td>Endurance</td>
+                            <td>○○○○</td>
+                            <td>○○○</td>
+                            <td>○○</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>Radiations</td>
+                            <td>○○○○</td>
+                            <td>○○○</td>
+                            <td>○○</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>Maladie</td>
+                            <td>○○○○</td>
+                            <td>○○○</td>
+                            <td>○○</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>Moral</td>
+                            <td>○○○○</td>
+                            <td>○○○</td>
+                            <td>○○</td>
+                            <td>○</td>
+                        </tr>
+                    </table>
+                    <span style="margin-top: -0.1cm;">___________________ ○○○</span>
+                    <span>___________________ ○○○</span>
+                    <span>___________________ ○○○</span>
+                    <span>___________________ ○○○</span>
+                    <span>___________________ ○○○</span>
+                </div>
+            </div>
+            <div class="stuff">
+                <div class="lines">
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                    <div class="info-line"> __________________</div>
+                </div>
+                <div class="item">EQUIPEMENT<img src="clip.png" class="clip"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sheets">
+            <div class="main well">
+                    <div class="picture"></div>
+                    <div class="infos">
+                        <div class="info-line">Nom : ______________________</div>
+                        <div class="info-line">Sexe : _____________________</div>
+                        <div class="info-line">Nationnalité : _____________</div>
+                        <div class="info-line">Traits : ___________________</div>
+                        <div class="info-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________</div>
+                        <div class="info-line">Lieu : _____________________</div>
+                        <div class="info-line">Richesse : _________________</div>
+                    </div>
+                </div>
+                <div class="detail well">
+                    <div class="stats">
+                        <div class="silhouette"></div>
+                        <div class="status">
+                            <table>
+                                <tr>
+                                    <td>Endurance</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Radiations</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Maladie</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Moral</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                            </table>
+                            <span style="margin-top: -0.1cm;">___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                        </div>
+                    </div>
+                    <div class="stuff">
+                        <div class="lines">
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                        </div>
+                        <div class="item">EQUIPEMENT<img src="clip.png" class="clip"></div>
+                    </div>
+                </div>
+    </div>
+    <div class="sheets">
+            <div class="main well">
+                    <div class="picture"></div>
+                    <div class="infos">
+                        <div class="info-line">Nom : ______________________</div>
+                        <div class="info-line">Sexe : _____________________</div>
+                        <div class="info-line">Nationnalité : _____________</div>
+                        <div class="info-line">Traits : ___________________</div>
+                        <div class="info-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________</div>
+                        <div class="info-line">Lieu : _____________________</div>
+                        <div class="info-line">Richesse : _________________</div>
+                    </div>
+                </div>
+                <div class="detail well">
+                    <div class="stats">
+                        <div class="silhouette"></div>
+                        <div class="status">
+                            <table>
+                                <tr>
+                                    <td>Endurance</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Radiations</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Maladie</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Moral</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                            </table>
+                            <span style="margin-top: -0.1cm;">___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                        </div>
+                    </div>
+                    <div class="stuff">
+                        <div class="lines">
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                        </div>
+                        <div class="item">EQUIPEMENT<img src="clip.png" class="clip"></div>
+                    </div>
+                </div>
+    </div>
+    <div class="sheets">
+            <div class="main well">
+                    <div class="picture"></div>
+                    <div class="infos">
+                        <div class="info-line">Nom : ______________________</div>
+                        <div class="info-line">Sexe : _____________________</div>
+                        <div class="info-line">Nationnalité : _____________</div>
+                        <div class="info-line">Traits : ___________________</div>
+                        <div class="info-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________</div>
+                        <div class="info-line">Lieu : _____________________</div>
+                        <div class="info-line">Richesse : _________________</div>
+                    </div>
+                </div>
+                <div class="detail well">
+                    <div class="stats">
+                        <div class="silhouette"></div>
+                        <div class="status">
+                            <table>
+                                <tr>
+                                    <td>Endurance</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Radiations</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Maladie</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <td>Moral</td>
+                                    <td>○○○○</td>
+                                    <td>○○○</td>
+                                    <td>○○</td>
+                                    <td>○</td>
+                                </tr>
+                            </table>
+                            <span style="margin-top: -0.1cm;">___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                            <span>___________________ ○○○</span>
+                        </div>
+                    </div>
+                    <div class="stuff">
+                        <div class="lines">
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                            <div class="info-line"> __________________</div>
+                        </div>
+                        <div class="item">EQUIPEMENT<img src="clip.png" class="clip"></div>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
